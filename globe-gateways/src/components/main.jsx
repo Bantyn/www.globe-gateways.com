@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import Navbar from "./navbar";
+import { useEffect, useState } from "react";
 
-export default function main() {
+export default function Main() {
   return (
     <>
-      
+      <header>
+        <Navbar></Navbar>
+      </header>
+      <main>
+        <section id="mainPage"></section>
+        <section id="detailsPage"></section>
+      </main>
+      <footer>
+        {/* <Footer></Footer> */}
+      </footer>
     </>
-  )
+  );
 }

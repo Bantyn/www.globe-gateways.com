@@ -55,6 +55,6 @@ html,body{
 }
 #mainPage{
     min-height: 100vh;
-    background: var(--black-color);
+    background: rebeccapurple;
     width: 100%;
 }
