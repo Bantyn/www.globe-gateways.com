@@ -1,14 +1,14 @@
 import React from 'react'
 import Main from '../src/components/main'
 import "../src/assets/css/style.css"
-import {Routes,Route} from 'react-router-dom'
+import {Router,Route} from 'react-router-dom'
 
 export default function App() {
   return (
     <>
-    <Routes>
+    <Router>
       <Route path='/' element={<Main></Main>}></Route>
-    </Routes>
+    </Router>
     </>
   )
 }
