@@ -69,13 +69,46 @@ html,body{
     align-items: center;
     gap: 10px;
 }
+/* ul */
 .nav-items{
     display: flex;
     align-items: center;
 }
+
 .bi-list-nested{
     font-size: 1.8vmin;
 }
+.navbar div[class="nav-links"] {
+    padding: 5px;
+    background: #555;
+    position: relative;
+
+}
+.navbar div[class="nav-links"] .lLine {
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 1px;
+    top: 100%;
+    left: 0;
+    border-radius: 50px;
+}
+.navbar div[class="nav-links"] .rLine {
+    position: absolute;
+    background: #fff;
+    width: 0%;
+    height: 1px;
+    top: 100%;
+    right: 0;
+    transition-delay: 1;
+    transition-duration: 0.3s ease;
+    border-radius: 50px;
+}
+.navbar div[class="nav-links"]:hover .rLine{
+    width: 100%;
+    transition-duration: 1s ease;
+}
+
 .nav-links a{
     font-size: 1.3vmin;
     text-transform: uppercase;
