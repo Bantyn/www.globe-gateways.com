@@ -61,9 +61,8 @@ export default function navbar(props) {
           </div>
           <div>
             <i className="bi bi-emoji-heart-eyes"></i>
-          </div> */}
-
-
+          </div> 
+*/}
         </div>
       </div>
     </>
