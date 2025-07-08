@@ -28,7 +28,7 @@ html,body{
 }
 .navbar{
     position: fixed;
-    height: 12vh;
+    height: 13vh;
     display: flex;
     width: 100%;
     align-items: center;
@@ -50,12 +50,34 @@ html,body{
     letter-spacing: 2px;
 }
 .bi-vertical-bar{
-    margin: 0px 5px;
-    font-size: 2.5vmin;
-    font-weight: 600;
+    margin: 0px 2vw;
+    font-size: 1.5vmin;
+    font-weight: 900;
 }
 #mainPage{
     min-height: 100vh;
     background: var(--black-color);
     width: 100%;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.bi-list-nested{
+    font-size: 1.8vmin;
+}
+.nav-links a{
+    font-size: 1.3vmin;
+    text-transform: uppercase;
+    color: var(--white-color);
 }
