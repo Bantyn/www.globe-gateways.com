@@ -22,19 +22,18 @@ export default function navbar(props) {
             <div className="nav-items">
               <div className="nav-links"><a href="#">Leatest Articales</a><span className="rLine"></span><span className="lLine"></span></div>
               <span className="bi-vertical-bar">|</span>
-              <div className="nav-links"><a href="#">Photo Of The Day</a></div>
+              <div className="nav-links"><a href="#">Photo Of The Day</a><span className="rLine"></span><span className="lLine"></span></div>
               <span className="bi-vertical-bar">|</span>
-              <div className="nav-links"><a href="#">About Us</a></div>
+              <div className="nav-links"><a href="#">About Us</a><span className="rLine"></span><span className="lLine"></span></div>
               <span className="bi-vertical-bar">|</span>
             </div>
         </div>
-
         <div className="nav-right">
-            <div className="nav-links"><a href="#">subscribe</a></div>
+            <div className="nav-links"><a href="#">subscribe</a><span className="rLine"></span><span className="lLine"></span></div>
             <span className="bi-vertical-bar">|</span>
             <div className="nav-icons"><i className="bi bi-search "></i></div>
             <span className="bi-vertical-bar">|</span>
-            <div className="nav-icons"><i className="bi bi-list-nested "></i></div>
+            <div className="nav-icons nav-links"><a href="#"><i className="bi bi-list-nested "></i></a></div>
 {/* 
           <div>
             <i className="bi bi-person-fill"></i>
