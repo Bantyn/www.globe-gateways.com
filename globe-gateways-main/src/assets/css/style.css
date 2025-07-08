@@ -73,7 +73,6 @@ html,body{
     display: flex;
     align-items: center;
 }
-
 .bi-list-nested{
     font-size: 1.8vmin;
 }
@@ -109,7 +108,6 @@ html,body{
     transition-delay: .1s;
     transition-duration: .3s;
 }
-
 .nav-links a{
     font-size: 1.3vmin;
     text-transform: uppercase;
