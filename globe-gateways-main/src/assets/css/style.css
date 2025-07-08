@@ -41,7 +41,6 @@ html,body{
     display: flex;
     justify-content: space-evenly;
     gap: 30px;
-    
 }
 .nav-logo{
     font-family: var(--sub-heading-font);
