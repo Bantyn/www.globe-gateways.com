@@ -19,9 +19,6 @@ export default function navbar(props) {
             <div><i className="bi bi-list-nested"></i></div>
 
 
-
-
-
 {/* 
           <div>
             <i className="bi bi-person-fill"></i>
@@ -49,7 +46,8 @@ export default function navbar(props) {
           </div>
           <div>
             <i className="bi bi-emoji-heart-eyes"></i>
-          </div> */}
+          </div> 
+*/}
         </div>
       </div>
     </>
