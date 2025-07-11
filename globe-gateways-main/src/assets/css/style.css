@@ -20,28 +20,28 @@
 *{
     font-family: var(--light-font);
     font-weight: 100;
-    box-sizing: border-box;
+
 }
 html,body{
     background: var(--black-color);
     color: var(--white-color);
+    box-sizing: border-box;    
+    overflow: hidden;
 }
 .navbar{
-    position: fixed;
     height: 13vh;
     display: flex;
-    width: 100%;
     align-items: center;
     padding: 0px 50px;
     font-size: 1.5vmin;
     justify-content: space-between;
     background: transparent;
-}
-.nav-right{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 30px;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}  
 .nav-logo{
     font-family: var(--sub-heading-font);
     font-size: 2vmin;
@@ -53,11 +53,6 @@ html,body{
     font-size: 1.5vmin;
     font-weight: 900;
 }
-#mainPage{
-    min-height: 100vh;
-    background: var(--black-color);
-    width: 100%;
-}
 .nav-left{
     display: flex;
     align-items: center;
@@ -68,7 +63,6 @@ html,body{
     align-items: center;
     gap: 10px;
 }
-/* ul */
 .nav-items{
     display: flex;
     align-items: center;
@@ -79,7 +73,6 @@ html,body{
 .navbar div[class="nav-links"] {
     padding: 5px;
     position: relative;
-
 }
 .navbar div[class="nav-links"] .lLine {
     position: absolute;
@@ -112,69 +105,4 @@ html,body{
     font-size: 1.3vmin;
     text-transform: uppercase;
     color: var(--white-color);
-}
-/* home */
-.home{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    overflow: hidden;
-}
-.home .images-container{
-    position: relative;
-    top: 30px;
-    width: 100vw;
-    height: 60vh;
-    display: flex;
-    overflow-x: scroll;
-    align-items: center;
-    gap: 1.8vw;
-}
-.images-container::-webkit-scrollbar {
-    display: none;
-}
-.image-container{
-    flex-shrink: 0;
-    width: 50vw;
-    display: block;
-    height: 90%;
-    background: #302f2f57;
-}
-.image-container img{
-    height: 100%;
-    width: 100%;
-}
-.pagination{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 13vh;
-}
-.pagination .line{
-    background: rgb(255,255,255,0.5);
-    border-radius: 1px;
-    width: 12vw;
-    height: 1px;
-}
-.pagination .pagination-menu{
-    height: 15vh;
-    width: 80px;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    background: var(--white-color);
-}
-.pagination-button{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-}
-.pagination-button span{
-    text-transform: uppercase;
-    font-family: var(--other-font);
-    font-size: 6vmin;
 }

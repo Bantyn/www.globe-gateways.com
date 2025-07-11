@@ -4,7 +4,7 @@ import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 gsap.registerPlugin(useGSAP);
 
-export default function navbar(props) {
+export default function navbar() {
   // useGSAP(()=>{
   //   gsap.from(".nav-links,.nav-logo,.nav-icons",{
   //     y:30,
