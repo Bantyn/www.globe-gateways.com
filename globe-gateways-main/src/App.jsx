@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import Main from './components/main.jsx';
 import Navbar from './components/navbar.jsx';
+import Sign from './components/sign.jsx';
 import Login from './components/login.jsx';
 import './assets/css/style.css';
 import './assets/js/main.js';
@@ -25,6 +26,7 @@ export default function App() {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/navbar' element={<Navbar />} />
+          <Route path='/sign' element={<Sign />} />
           <Route path='/login' element={<Login />} />
         </Routes>
       </main>
