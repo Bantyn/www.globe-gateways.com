@@ -12,7 +12,7 @@ export default function navbar() {
   //     duration:0.5,
   //     stagger:.1
   //   })
-  // })
+  // })a
 
   return (
     <>
