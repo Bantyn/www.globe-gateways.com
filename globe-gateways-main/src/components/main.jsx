@@ -7,7 +7,6 @@ export default function Main() {
       <header>
         <Navbar></Navbar>
       </header>
-      
     </>
   );
 }
