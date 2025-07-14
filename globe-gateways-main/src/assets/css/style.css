@@ -17,88 +17,179 @@
     --white-color:#fffcf9;
     --black-color:#040403;
 }
-*{
-    font-family: var(--light-font);
-    font-weight: 100;
-    box-sizing: border-box;    
+/* ========== Base Setup ========== */
+* {
+  font-family: var(--light-font);
+  font-weight: 100;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+html,
+body {
+  background: transparent;
+  color: var(--white-color);
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
-html,body{
-    /* background: var(--black-color); */
-    background: transparent;
-    color: var(--white-color);
-    height: 100vh;
-    width: 100%;
-    
+
+/* ========== Navbar ========== */
+.navbar {
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  font-size: 1.5vmin;
+  width: 100%;
+  justify-content: space-between;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
-.navbar{
-    height: 13vh;
-    display: flex;
+
+/* ========== Logo ========== */
+.nav-logo {
+  font-family: var(--sub-heading-font);
+  font-size: 2vmin;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* ========== Divider ========== */
+.bi-vertical-bar {
+  margin: 0 2vw;
+  font-size: 1.5vmin;
+  font-weight: 900;
+}
+
+/* ========== Layout ========== */
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ========== Nav Items ========== */
+.nav-items {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.nav-links {
+  padding: 5px;
+  position: relative;
+}
+
+/* ========== Hover Underline Effect ========== */
+.nav-links .lLine,
+.nav-links .rLine {
+  position: absolute;
+  background: #fff;
+  height: 0.6%;
+  top: 100%;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.nav-links .lLine {
+  width: 0;
+  left: 0;
+}
+
+.nav-links .rLine {
+  width: 100%;
+  right: 0;
+}
+
+.nav-links:hover .rLine {
+  width: 0;
+}
+
+.nav-links:hover .lLine {
+  width: 100%;
+  transition-delay: 0.1s;
+}
+
+/* ========== Anchor Style ========== */
+.nav-links a {
+  font-size: 1.3vmin;
+  text-transform: uppercase;
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/* ========== Icons ========== */
+.bi-list-nested {
+  font-size: 1.8vmin;
+  cursor: pointer;
+}
+
+.nav-icons {
+  font-size: 1.8vmin;
+  cursor: pointer;
+}
+
+/* ========== Responsive Styles ========== */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(6px);
+  }
+  .nav-logo{
+    display: block;
+    margin: auto;
+  }
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
     align-items: center;
-    padding: 0px 50px;
-    font-size: 1.5vmin;
+    justify-content: center;
     width: 100%;
+    gap: 10px;
+  }
+  .nav-right {
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    background: transparent;
-    position: fixed;
-}  
-.nav-logo{
-    font-family: var(--sub-heading-font);
-    font-size: 2vmin;
-    font-weight: 700;
+    width: 100%;
+  }
+
+  .nav-logo {
+    font-size: 4vmin;
+    margin-bottom: 10px;
+  }
+
+  .nav-items {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-items.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 3vmin;
     letter-spacing: 2px;
 }
-.bi-vertical-bar{
-    margin: 0px 2vw;
-    font-size: 1.5vmin;
-    font-weight: 900;
-}
-.nav-left,.nav-right{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.nav-items{
-    display: flex;
-    align-items: center;
-}
-.bi-list-nested{
-    font-size: 1.8vmin;
-}
-.navbar div[class="nav-links"] {
-    padding: 5px;
-    position: relative;
-}
-.navbar div[class="nav-links"] .lLine {
-    position: absolute;
-    background: #fff;
-    width: 0;
-    height: 1px;
-    top: 100%;
-    left: 0;
-    border-radius: 50px;
-}
-.navbar div[class="nav-links"] .rLine {
-    position: absolute;
-    background: #fff;
-    width: 100%;
-    height: 1px;
-    top: 100%;
-    right: 0;
-    border-radius: 50px;
-}
-.navbar div[class="nav-links"]:hover .rLine{
-    width: 0;
-    transition-duration: .3s;
-}
-.navbar div[class="nav-links"]:hover .lLine{
-    width: 100%;
-    transition-delay: .1s;
-    transition-duration: .3s;
-}
-.nav-links a{
-    font-size: 1.3vmin;
-    text-transform: uppercase;
-    color: var(--white-color);
-}
 
+  .bi-vertical-bar {
+    display: none;
+  }
+
+  .bi-list-nested {
+    font-size: 3vmin;
+    align-self: flex-end;
+  }
+}

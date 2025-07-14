@@ -9,7 +9,7 @@ export default function Main() {
     subTitle: "Where Mountains Whisper Peace",
     subTitle2: "Where Mountains Whisper Peace",
     price: 19000,
-    image: "http://picsum.photos/3840/2160?random=101",
+    image: "../src/assets/images/agra/agra.png",
     subImages: [
       "http://picsum.photos/3840/2160?random=101",
       "http://picsum.photos/3840/2160?random=102",
