@@ -32,12 +32,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
-html,body{
-    color: var(--white-color);
-    box-sizing: border-box;    
-    overflow: hidden;
-}
 #loginMainImage{
     height: 97vh;
     width: 100%;

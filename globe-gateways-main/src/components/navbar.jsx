@@ -5,20 +5,20 @@ import {useGSAP} from '@gsap/react'
 gsap.registerPlugin(useGSAP);
 
 export default function navbar() {
-  // useGSAP(()=>{
-  //   gsap.from(".nav-links,.nav-logo,.nav-icons",{
-  //     y:30,
-  //     opacity:0,
-  //     duration:0.5,
-  //     stagger:.1
-  //   })
-  // })a
-
+  useGSAP(()=>{
+    gsap.from(".nav-links,.nav-logo,.nav-icons",{
+      y:30,
+      opacity:0,
+      duration:0.5,
+      stagger:.1
+    })
+  })
   return (
     <>
       <div className="navbar">
         <div className="nav-left">
-            <div className="nav-logo">Globe Gateways <span className="bi-vertical-bar">|</span></div>
+            <div className="nav-logo">Globe Gateways </div>
+            <span className="bi-vertical-bar">|</span>
             <div className="nav-items">
               <div className="nav-links"><a href="#">Leatest Articales</a><span className="rLine"></span><span className="lLine"></span></div>
               <span className="bi-vertical-bar">|</span>

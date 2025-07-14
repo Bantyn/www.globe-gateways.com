@@ -20,13 +20,15 @@
 *{
     font-family: var(--light-font);
     font-weight: 100;
+    box-sizing: border-box;    
 
 }
 html,body{
-    background: var(--black-color);
+    /* background: var(--black-color); */
+    background: transparent;
     color: var(--white-color);
-    box-sizing: border-box;    
-    overflow: hidden;
+    /* overflow-x: hidden; */
+    
 }
 .navbar{
     height: 13vh;
@@ -34,13 +36,10 @@ html,body{
     align-items: center;
     padding: 0px 50px;
     font-size: 1.5vmin;
+    width: 100%;
     justify-content: space-between;
     background: transparent;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-
 }  
 .nav-logo{
     font-family: var(--sub-heading-font);
@@ -53,12 +52,7 @@ html,body{
     font-size: 1.5vmin;
     font-weight: 900;
 }
-.nav-left{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.nav-right{
+.nav-left,.nav-right{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -105,4 +99,8 @@ html,body{
     font-size: 1.3vmin;
     text-transform: uppercase;
     color: var(--white-color);
+}
+
+.text-animatin{
+    
 }
