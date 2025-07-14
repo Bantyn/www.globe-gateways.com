@@ -15,7 +15,7 @@ export default function Template({ title, subTitle, price, image }) {
 
       </div>
 
-      <p>₹{price}</p>
+      {/* <p>₹{price}</p> */}
     </div>
   );
 }

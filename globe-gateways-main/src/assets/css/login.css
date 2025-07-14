@@ -19,10 +19,6 @@
     --login-color:#040403;
     --login-color-2:#4a2c5b;
 }
-*{
-    font-weight: 100;
-    box-sizing: border-box;
-}
 .container-fluid{
     padding: 15px;
     height: 100vh;
