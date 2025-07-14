@@ -30,38 +30,40 @@ export default function LoginPage() {
                 Don't have an account?{" "}
                 <a href="/sign" id="signupLink">Sign Up</a>
               </p>
-              <table cellPadding={"10%"}>
-                <tr>
-                  <td colSpan={2}>
-                    <input type="text" name="email" id="email" placeholder="Email" />
-                  </td>
-                </tr>
-                <tr>
-                  <td colSpan={2}>
-                    <input type="password" name="password" id="password" placeholder="Password" />
-                  </td>
-                </tr>
-                <tr>
-                  <td colSpan={2}>
-                    <button type="submit" className="submit">Login</button>
-                  </td>
-                </tr>
-                <tr>
-                  <td colSpan={2} className="other">
-                    <fieldset>
-                      <legend style={{ fontFamily: "var(--sub-heading-font)" }}>
-                        <i className="bi bi-people"></i> Or login with
-                      </legend>
-                      <button type="button" className="google">
-                        <i className="bi bi-google"></i>&nbsp; Google
-                      </button>
-                      <button type="button" className="facebook">
-                        <i className="bi bi-facebook"></i>&nbsp; Facebook
-                      </button>
-                    </fieldset>
-                  </td>
-                </tr>
-              </table>
+              <table cellPadding="10%">
+  <tbody>
+    <tr>
+      <td colSpan={2}>
+        <input type="text" name="email" id="email" placeholder="Email" />
+      </td>
+    </tr>
+    <tr>
+      <td colSpan={2}>
+        <input type="password" name="password" id="password" placeholder="Password" />
+      </td>
+    </tr>
+    <tr>
+      <td colSpan={2}>
+        <button type="submit" className="submit">Login</button>
+      </td>
+    </tr>
+    <tr>
+      <td colSpan={2} className="other">
+        <fieldset>
+          <legend style={{ fontFamily: "var(--sub-heading-font)" }}>
+            <i className="bi bi-people"></i> Or login with
+          </legend>
+          <button type="button" className="google">
+            <i className="bi bi-google"></i>&nbsp; Google
+          </button>
+          <button type="button" className="facebook">
+            <i className="bi bi-facebook"></i>&nbsp; Facebook
+          </button>
+        </fieldset>
+      </td>
+    </tr>
+  </tbody>
+</table>
             </div>
           </div>
         </div>
