@@ -44,7 +44,7 @@
   object-fit: cover;
 }
 
-.main-title-container{
+.main-title-container{  
   position: absolute;
   z-index: 11;
   display: flex;
@@ -74,4 +74,10 @@
   font-size: 2.5vmin;
   right: 0;
   z-index: 11;
+}
+
+
+.sub-images-container{
+  min-height: 100vh;
+  background: #ffffff;
 }

@@ -9,7 +9,7 @@ export default function Main() {
     subTitle: "Where Mountains Whisper Peace",
     subTitle2: "Where Mountains Whisper Peace",
     price: 19000,
-    image: "http://picsum.photos/1920/1080?random=1",
+    image: "../src/assets/images/manali/manali.jpg",
     subImages: [
       "http://picsum.photos/1920/1080?random=101",
       "http://picsum.photos/1920/1080?random=102",
@@ -65,7 +65,7 @@ export default function Main() {
     description: "Lush coffee plantations, misty mornings, and a tranquil escape await in the heart of Karnataka."
   },
   {
-    title: "Andaman Islands",
+    title: "Andaman",
     subTitle: "Where Waves Speak in Stillness",
     subTitle2: "Where Waves Speak in Stillness",
     price: 25000,
