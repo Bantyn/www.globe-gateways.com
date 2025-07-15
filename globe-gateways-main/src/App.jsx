@@ -8,12 +8,14 @@ import Template from './components/template.jsx';
 import './assets/css/style.css';
 import './assets/js/main.js';
 import 'locomotive-scroll/dist/locomotive-scroll.css'; // important!
+import GlowingCursor from "../src/components/glowingCursor.jsx";
 
 export default function App() {
   const containerRef = useRef(null);
   
   return (
     <>
+        <GlowingCursor></GlowingCursor>
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/navbar' element={<Navbar />} />

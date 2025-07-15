@@ -1,4 +1,7 @@
+const cursor = document.querySelector('.glow-cursor');
 
-document.querySelectorAll(".text-animatin").forEach(Element =>{
-    console.log(Element)
-})
+document.addEventListener('mousemove', (e) => {
+  if (window.innerWidth > 700) {
+    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+  }
+});
