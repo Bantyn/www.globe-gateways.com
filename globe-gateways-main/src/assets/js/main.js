@@ -1,7 +1,9 @@
-const cursor = document.querySelector('.glow-cursor');
 
-document.addEventListener('mousemove', (e) => {
-  if (window.innerWidth > 700) {
-    cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
-  }
+Shery.textAnimate(".text-animation", {
+  style: 1,
+  y: 10,
+  delay: 0.1,
+  duration: 2,
+  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+  multiplier: 0.1,
 });

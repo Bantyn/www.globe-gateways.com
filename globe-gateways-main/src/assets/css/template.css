@@ -16,6 +16,9 @@
   box-sizing: border-box;
 }
 
+[data-scroll-container] {
+  height: 100%;
+}
 .main-grid{
   height: auto;
 }

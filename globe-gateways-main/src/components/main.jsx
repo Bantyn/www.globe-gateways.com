@@ -1,5 +1,8 @@
 import Template from "./template";
-import { React, useEffect, useState } from "react";
+import { React, useEffect, useRef } from "react";
+import LocomotiveScroll from 'locomotive-scroll';
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+
 export default function Main() {
   const json = [
   {
@@ -31,8 +34,8 @@ export default function Main() {
     "subImages": ["../src/assets/images/badhrinath/subImages/badrinath1.jpg",
                   "../src/assets/images/badhrinath/subImages/badrinath2.jpg",
                   "../src/assets/images/badhrinath/subImages/badrinath3.jpg",
-                  "../src/assets/images/badhrinath/subImages/badrinath4.jpg",
-                  "../src/assets/images/badhrinath/subImages/badrinath5.jpg"
+                  "../src/assets/images/badhrinath/subImages/badrinath4.jpeg",
+                  "../src/assets/images/badhrinath/subImages/badrinath5.jpeg"
     ],
     "transportation": ["Bus", "Cab"],
     "includes": ["Hotel Stay", "Meals", "Temple Visit", "Travel Insurance"],
@@ -142,28 +145,41 @@ export default function Main() {
     "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
     "description": "Experience luxury in the heart of the desert with skyscrapers, souks, and safaris."
   }
-]
-
-
-;
-
+];
+  const containerRef = useRef();
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: containerRef.current,
+      smooth: true,
+      lerp: 0.1,
+      smartphone:{
+        smooth:true
+      },
+      tablet:{
+        smooth:true
+      }
+    });
+    setTimeout(() => {
+      scroll.update();
+    }, 500);
+    return () => scroll.destroy();
+  }, []);
   return (
     <>
-      
-      <main className="main-grid">
+      <main ref={containerRef} data-scroll-container>
         {json.map((element, index) => (
           <Template
             key={index}
-      title={element.title}
-      subTitle={element.subTitle}
-      price={element.price}
-      image={element.image}
-      subImages={element.subImages}
-      location={element.location}
-      duration={element.duration}
-      transportation={element.transportation}
-      includes={element.includes}
-      description={element.description}
+            title={element.title}
+            subTitle={element.subTitle}
+            price={element.price}
+            image={element.image}
+            subImages={element.subImages}
+            location={element.location}
+            duration={element.duration}
+            transportation={element.transportation}
+            includes={element.includes}
+            description={element.description}
           />
         ))}
       </main>

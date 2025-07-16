@@ -10,7 +10,7 @@ import PhotoOfDay from '../src/pages/photoOfDay.jsx';
 import Account from '../src/pages/account.jsx';
 import About from '../src/pages/about.jsx';
 
-
+// import Shery from "sheryjs";
 import './assets/css/style.css';
 import './assets/js/main.js';
 import GlowingCursor from "../src/components/glowingCursor.jsx";

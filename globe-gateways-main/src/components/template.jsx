@@ -3,32 +3,10 @@ import React, { useRef,useEffect } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/dist/locomotive-scroll.css';
-
 
 gsap.registerPlugin(ScrollTrigger);
-
 export default function Template({ title, subTitle, price, image, subImages,location}) {
   const containerRef = useRef();
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: containerRef.current,
-      smooth: true,
-      lerp:0.4,
-      smartphone: {
-        // smooth: true
-      },
-      tablet: {
-        smooth: true
-      }
-    });
-
-    return () => {
-      if (scroll) scroll.destroy();
-    };
-  }, []);
-
   useGSAP(() => {
     gsap.from(".text-animation", {
       y: 90,
@@ -41,7 +19,7 @@ export default function Template({ title, subTitle, price, image, subImages,loca
         start: "top 80%",
         end: "bottom 40%",
         toggleActions: "play none none reverse",
-        // markers: true,
+        markers: true,
       },
     });
     gsap.from(".text-animation-2", {
@@ -57,14 +35,10 @@ export default function Template({ title, subTitle, price, image, subImages,loca
         // markers: true,
       },
     });
-
-
-
-    
   }, { scope: containerRef }); // Ensures scoped selector targeting within component
 
   return (
-    <div className="main-template-container" ref={containerRef}  data-scroll-container>
+    <div className="main-template-container" ref={containerRef}>
       <div className="template-image-container">
         <img src={image} alt={title} />
       </div>
@@ -79,7 +53,7 @@ export default function Template({ title, subTitle, price, image, subImages,loca
         {/* Optional: Add extra content or images */}
         <div className="imageRow">
           {subImages.map((element, index) => (
-            <img key={index} data-scroll data-scroll-speed="9" data-scroll-direction="horizontal" src={element} />
+            <img key={index} data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" src={element} />
           ))}
           </div>
           <div className="locationTitle"><h2>{location}</h2></div>
