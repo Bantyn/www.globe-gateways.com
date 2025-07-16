@@ -9,16 +9,16 @@ gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 export default function Template({ title, subTitle, price, image, subImages }) {
   useGSAP(()=>{
-  gsap.from(".main-title",{
+  gsap.from(".text-animation",{
   y:30,
   opacity:0,
   duration:0.5,
+  stagger:0.3,
   scrollTrigger:{
     trigger:".main-title",
-    start:"top 80%",
-
+    start:"top 70%",
     end:"bottom 30%",
-    // markers:true
+    markers:true
   }
   })
   })
@@ -29,8 +29,8 @@ export default function Template({ title, subTitle, price, image, subImages }) {
       </div>
 
       <div className="main-title-container">
-        <h2 className="main-title">{title}</h2>
-        <p className="sub-title">{subTitle}</p>
+        <h2 className="main-title text-animation">{title}</h2>
+        <p className="sub-title text-animation">{subTitle}</p>
         <br />
         <button type="button" className="price-tag">Book Start at {price} /-</button>
       </div>
