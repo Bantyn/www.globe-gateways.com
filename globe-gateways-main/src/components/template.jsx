@@ -18,7 +18,7 @@ export default function Template({ title, subTitle, price, image, subImages }) {
     trigger:".main-title",
     start:"top 70%",
     end:"bottom 30%",
-    markers:true
+    // markers:true
   }
   })
   })
