@@ -1,36 +1,42 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Main from './components/main.jsx';
 import Navbar from './components/navbar.jsx';
-import Sign from './components/sign.jsx';
 import Login from './components/login.jsx';
 import Template from './components/template.jsx';
+
+import Articals from '../src/pages/articals.jsx';
+import PhotoOfDay from '../src/pages/photoOfDay.jsx';
+import Account from '../src/pages/account.jsx';
+import About from '../src/pages/about.jsx';
+
+
 import './assets/css/style.css';
 import './assets/js/main.js';
-import 'locomotive-scroll/dist/locomotive-scroll.css'; // important!
 import GlowingCursor from "../src/components/glowingCursor.jsx";
 
+
 export default function App() {
-  const containerRef = useRef(null);
-  
   return (
     <>
-        <GlowingCursor></GlowingCursor>
+      <GlowingCursor />
         <header>
-          <Navbar></Navbar>
+          <Navbar />
         </header>
 
         <Routes>
           <Route path='/' element={<Main />} />
-          <Route path='/navbar' element={<Navbar />} />
-          <Route path='/sign' element={<Sign />} />
+          <Route path='/articals' element={<Articals />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/template' element={<Template/>}></Route>
-        </Routes>       
+          <Route path='/template' element={<Template />} />
+          <Route path='/photoofday' element={<PhotoOfDay />} />
+          <Route path='/account' element={<Account />} />
+          <Route path='/about' element={<About />} />
+        </Routes>
 
         <footer>
-          
-        </footer> 
-      </>
+          {/* Footer content */}
+        </footer>
+    </>
   );
 }
