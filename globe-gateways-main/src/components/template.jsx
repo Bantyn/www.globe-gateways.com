@@ -3,8 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap'
 import {useGSAP} from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(useGSAP,ScrollTrigger);
 
 
 
@@ -14,12 +13,13 @@ export default function Template({ title, subTitle, price, image, subImages }) {
   y:30,
   opacity:0,
   duration:0.5,
-  delay:2
-  // scrollTrigger:{
-  //   trigger:".main-title",
-  //   top:"90%",
-  //   markers:ture
-  // }
+  scrollTrigger:{
+    trigger:".main-title",
+    start:"top 80%",
+
+    end:"bottom 30%",
+    // markers:true
+  }
   })
   })
   return (
