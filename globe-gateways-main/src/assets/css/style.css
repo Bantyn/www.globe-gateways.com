@@ -34,6 +34,9 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 /* ========== Navbar ========== */
 .navbar {
@@ -41,10 +44,11 @@ body {
   display: flex;
   align-items: center;
   padding: 0 50px;
-  font-size: 1.5vmin;
+  font-size:clamp(2vmin , 2vw ,2vmin);
   width: 100%;
   justify-content: space-between;
-  background: transparent;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0,),transparent) ; */
+  /* backdrop-filter: blur(10px); */
   position: fixed;
   top: 0;
   left: 0;

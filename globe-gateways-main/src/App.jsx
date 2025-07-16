@@ -16,13 +16,21 @@ export default function App() {
   return (
     <>
         <GlowingCursor></GlowingCursor>
+        <header>
+          <Navbar></Navbar>
+        </header>
+
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/navbar' element={<Navbar />} />
           <Route path='/sign' element={<Sign />} />
           <Route path='/login' element={<Login />} />
           <Route path='/template' element={<Template/>}></Route>
-        </Routes>        
+        </Routes>       
+
+        <footer>
+          
+        </footer> 
       </>
   );
 }
