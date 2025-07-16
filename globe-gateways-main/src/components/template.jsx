@@ -35,7 +35,7 @@ export default function Template({ title, subTitle, price, image, subImages,loca
         // markers: true,
       },
     });
-  }, { scope: containerRef }); // Ensures scoped selector targeting within component
+  }, { scope: containerRef }); 
 
   return (
     <div className="main-template-container" ref={containerRef}>
@@ -50,7 +50,6 @@ export default function Template({ title, subTitle, price, image, subImages,loca
       </div>
 
       <div className="sub-images-container">
-        {/* Optional: Add extra content or images */}
         <div className="imageRow">
           {subImages.map((element, index) => (
             <img key={index} data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" src={element} />

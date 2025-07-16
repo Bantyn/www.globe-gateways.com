@@ -235,10 +235,10 @@
 }
 .imageRow img{
   height: auto;
-  width: 70%;
+  width: 60%;
 }
 .imageRow img:nth-child(2n){
-  width: 80%;
+  width: 40%;
   box-shadow: 0px 0px 100px 50px var(--black-color);
   z-index: 10;
   position: relative;
