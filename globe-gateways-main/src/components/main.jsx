@@ -104,8 +104,8 @@ export default function Main() {
     "subImages": ["../src/assets/images/tirupati/subImages/tirupati1.jpg",
                   "../src/assets/images/tirupati/subImages/tirupati2.jpg",
                   "../src/assets/images/tirupati/subImages/tirupati3.jpg",
-                  "../src/assets/images/tirupati/subImages/tirupati4.jpeg",
-                  "../src/assets/images/tirupati/subImages/tirupati5.jpeg"
+                  "../src/assets/images/tirupati/subImages/tirupati4.jpg",
+                  "../src/assets/images/tirupati/subImages/tirupati5.jpg"
     ],
     "transportation": ["Train", "Bus"],
     "includes": ["Temple Darshan", "Accommodation", "Meals", "Local Guide"],
