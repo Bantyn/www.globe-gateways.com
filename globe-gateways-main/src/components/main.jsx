@@ -123,8 +123,13 @@ export default function Main() {
     "location": "Goa",
     "price": 8300,
     "duration": "4D/3N",
-    "image": "../src/assets/images/goa/goa.png",
-    "subImages": [],
+    "image": "../src/assets/images/Goa/goa.png",
+    "subImages": ["../src/assets/images/Goa/subImages/goa1.jpg",
+                  "../src/assets/images/Goa/subImages/goa2.jpg",
+                  "../src/assets/images/Goa/subImages/goa3.jpg",
+                  "../src/assets/images/Goa/subImages/goa4.jpg",
+                  "../src/assets/images/Goa/subImages/goa5.jpg"
+    ],
     "transportation": ["Flight", "Train", "Bike Rentals"],
     "includes": ["Beach Stay", "Breakfast", "Sightseeing", "Nightlife Access"],
     "description": "Golden beaches, Portuguese charm, and endless entertainment make Goa irresistible."
