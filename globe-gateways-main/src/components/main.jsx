@@ -107,7 +107,7 @@ export default function Main() {
     "transportation": ["Bus", "Tempo Traveller"],
     "includes": ["All Temple Visits", "Accommodation", "Meals", "Local Transport"],
     "description": "The ultimate pilgrimage journey across four revered sites in the Indian Himalayas."
-  },
+  }, 
   {
     "id": 7,
     "title": "Tirupati",
