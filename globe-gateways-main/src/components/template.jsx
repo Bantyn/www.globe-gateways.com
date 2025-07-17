@@ -14,6 +14,7 @@ export default function Template({ title, subTitle, price, image, subImages,loca
       scale:0.9,
       duration: 0.5,
       stagger: true,
+      delay:1.0,
       scrollTrigger: {
         trigger: ".main-title",
         start: "top 80%",
@@ -26,11 +27,13 @@ export default function Template({ title, subTitle, price, image, subImages,loca
       y: 60,
       opacity: 0,
       duration: 0.5,
-      // delay:0.7,
+      delay:1.3,
       scrollTrigger: {
         trigger: ".main-title",
+        scroller: '[data-scroll-container]',
         start: "top 60%",
         end: "bottom 40%",
+        scrub:true,
         toggleActions: "play none none reverse",
         // markers: true,
       },
@@ -55,7 +58,7 @@ export default function Template({ title, subTitle, price, image, subImages,loca
             <img key={index} data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" src={element} />
           ))}
           </div>
-          <div className="locationTitle"><h2>{location}</h2></div>
+          <div className="locationTitle"><h2 className="text-animation-shery">{location}</h2></div>
         <button type="button" className="price-tag">Book Start at {price} /-</button>
 
       </div>

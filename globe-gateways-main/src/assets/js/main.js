@@ -1,5 +1,5 @@
 
-Shery.textAnimate(".text-animation", {
+Shery.textAnimate(".text-animation-shery", {
   style: 1,
   y: 10,
   delay: 0.1,
