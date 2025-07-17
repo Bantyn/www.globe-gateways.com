@@ -10,7 +10,7 @@
 }
 
 .slider-column {
-  flex: 1;
+  flex: 1; 
   overflow: hidden;
   display: flex;
   justify-content: center;
