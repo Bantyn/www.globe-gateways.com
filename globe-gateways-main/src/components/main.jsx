@@ -141,7 +141,7 @@ export default function Main() {
     "location": "Southeast Asia",
     "price": 129900,
     "duration": "9D/8N",
-    "image": "../src/assets/images/Singapore/singapore.png",
+    "image": "../src/assets/images/Singpore/singapore.png",
     "subImages": ["../src/assets/images/Singapore/subImages/singapore1.jpg",
                   "../src/assets/images/Singapore/subImages/singapore2.jpg",
                   "../src/assets/images/Singapore/subImages/singapore3.jpg",
