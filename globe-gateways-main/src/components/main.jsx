@@ -164,8 +164,13 @@ export default function Main() {
     "location": "UAE",
     "price": 65500,
     "duration": "6D/5N",
-    "image": "../src/assets/images/Dubai/dubai.png",
-    "subImages": [],
+    "image": "../src/assets/images/dubai/dubai.png",
+    "subImages": ["../src/assets/images/dubai/subImages/dubai1.jpg",
+                  "../src/assets/images/dubai/subImages/dubai2.jpg",
+                  "../src/assets/images/dubai/subImages/dubai3.jpg",
+                  "../src/assets/images/dubai/subImages/dubai4.jpg",
+                  "../src/assets/images/dubai/subImages/dubai5.jpg"
+    ],
     "transportation": ["Flight", "Metro", "Desert Safari Jeep"],
     "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
     "description": "Experience luxury in the heart of the desert with skyscrapers, souks, and safaris."
