@@ -142,7 +142,12 @@ export default function Main() {
     "price": 129900,
     "duration": "9D/8N",
     "image": "../src/assets/images/Singapore/singapore.png",
-    "subImages": [],
+    "subImages": ["../src/assets/images/Singapore/subImages/singapore1.jpg",
+                  "../src/assets/images/Singapore/subImages/singapore2.jpg",
+                  "../src/assets/images/Singapore/subImages/singapore3.jpg",
+                  "../src/assets/images/Singapore/subImages/singapore4.jpg",
+                  "../src/assets/images/Singapore/subImages/singapore5.jpg"
+    ],
     "transportation": ["Flight", "Metro", "Bus"],
     "includes": ["Flight", "Hotel", "Universal Studios", "Gardens by the Bay"],
     "description": "A clean, efficient city full of world-class attractions and nature-tech fusion."
