@@ -142,7 +142,31 @@
   font-family: var(--heading-font);
   font-size: clamp(7rem, 8vw, 9vmin);
   margin-top: 12vh;
+  position: relative;
+  text-shadow: 0 0 20px black;
+  background: linear-gradient(to bottom, #ffffff, rgba(255,255,255), #00000006, rgba(0, 0, 0, 0.75));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-transform: uppercase;
 
+}
+.locationTitle h2:after{
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  content:"Locate at";
+  font-family: var(--light-font);
+  font-size: clamp(2rem, 8vw, 8vmin);
+  margin-top: 12vh;
+}
+.information{
+  background: #666;
+  width: 98%;
+  display: block;
+  margin: auto  ;
+  height: 100vh;
 }
 
 

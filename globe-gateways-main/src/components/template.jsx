@@ -58,8 +58,11 @@ export default function Template({ title, subTitle, price, image, subImages,loca
             <img key={index} data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" src={element} />
           ))}
           </div>
-          <div className="locationTitle"><h2 className="text-animation-shery">{location}</h2></div>
-        <button type="button" className="price-tag">Book Start at {price} /-</button>
+          <div className="locationTitle"><h2 className="text-animation-">{location}</h2></div>
+          <div className="information">
+            
+          </div>
+          <button type="button" className="price-tag">Book Start at {price} /-</button>
 
       </div>
     </div>

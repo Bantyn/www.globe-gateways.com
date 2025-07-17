@@ -23,6 +23,7 @@ export default function Main() {
     "includes": ["Accommodation", "Meals", "Local Guide", "Helicopter Ticket (optional)"],
     "description": "A sacred Himalayan pilgrimage site nestled amidst snow‑capped peaks and spiritual calm."
   },
+  
   {
     "id": 2,
     "title": "Badrinath",
@@ -49,7 +50,12 @@ export default function Main() {
     "price": 13500,
     "duration": "6D/5N",
     "image": "../src/assets/images/manali/manali.png",
-    "subImages": [],
+    "subImages": ["../src/assets/images/manali/subImages/manali1.jpg",
+                  "../src/assets/images/manali/subImages/manali2.jpg",
+                  "../src/assets/images/manali/subImages/manali3.jpg",
+                  "../src/assets/images/manali/subImages/manali4.jpg",
+                  "../src/assets/images/manali/subImages/manali5.jpg"
+    ],
     "transportation": ["Bus", "Train", "Flight (optional)"],
     "includes": ["Stay", "Breakfast", "City Tour", "Adventure Activities"],
     "description": "Popular hill station with snowy landscapes, apple orchards, and adventure sports."
@@ -98,7 +104,12 @@ export default function Main() {
     "price": 17500,
     "duration": "10D/9N",
     "image": "../src/assets/images/chardham/char dham.png",
-    "subImages": [],
+    "subImages": ["../src/assets/images/chardham/subImages/chardham1.jpg",
+                  "../src/assets/images/chardham/subImages/chardham2.jpg",
+                  "../src/assets/images/chardham/subImages/chardham3.jpg",
+                  "../src/assets/images/chardham/subImages/chardham4.jpg",
+                  "../src/assets/images/chardham/subImages/chardham5.jpg"
+    ],
     "transportation": ["Bus", "Tempo Traveller"],
     "includes": ["All Temple Visits", "Accommodation", "Meals", "Local Transport"],
     "description": "The ultimate pilgrimage journey across four revered sites in the Indian Himalayas."
@@ -165,7 +176,12 @@ export default function Main() {
     "price": 65500,
     "duration": "6D/5N",
     "image": "../src/assets/images/Dubai/dubai.png",
-    "subImages": [],
+    "subImages": ["../src/assets/images/Dubai/subImages/dubai1.jpg",
+                  "../src/assets/images/Dubai/subImages/dubai2.jpg",
+                  "../src/assets/images/Dubai/subImages/dubai3.jpg",
+                  "../src/assets/images/Dubai/subImages/dubai4.jpg",
+                  "../src/assets/images/Dubai/subImages/dubai5.jpg"
+    ],
     "transportation": ["Flight", "Metro", "Desert Safari Jeep"],
     "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
     "description": "Experience luxury in the heart of the desert with skyscrapers, souks, and safaris."
