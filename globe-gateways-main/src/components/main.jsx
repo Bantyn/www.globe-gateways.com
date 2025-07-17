@@ -97,8 +97,13 @@ export default function Main() {
     "location": "Uttarakhand",
     "price": 17500,
     "duration": "10D/9N",
-    "image": "../src/assets/images/chardham/char dham.png",
-    "subImages": [],
+    "image": "../src/assets/images/chardham/chardham.png",
+    "subImages": ["../src/assets/images/chardham/subImages/chardham1.jpg",
+                  "../src/assets/images/chardham/subImages/chardham2.jpg",
+                  "../src/assets/images/chardham/subImages/chardham3.jpg",
+                  "../src/assets/images/chardham/subImages/chardham4.jpg",
+                  "../src/assets/images/chardham/subImages/chardham5.jpg"
+    ],
     "transportation": ["Bus", "Tempo Traveller"],
     "includes": ["All Temple Visits", "Accommodation", "Meals", "Local Transport"],
     "description": "The ultimate pilgrimage journey across four revered sites in the Indian Himalayas."
