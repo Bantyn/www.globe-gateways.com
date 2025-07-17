@@ -62,7 +62,12 @@ export default function Main() {
     "price": 97500,
     "duration": "7D/6N",
     "image": "../src/assets/images/Vietnam/vietnam.png",
-    "subImages": [],
+    "subImages": ["../src/assets/images/Vitenam/subImages/vietnam1.jpg",
+                  "../src/assets/images/Vitenam/subImages/vietnam2.jpg",
+                  "../src/assets/images/Vitenam/subImages/vietnam3.jpg",
+                  "../src/assets/images/Vitenam/subImages/vietnam4.jpg",
+                  "../src/assets/images/Vitenam/subImages/vietnam5.jpg"
+    ],
     "transportation": ["Flight", "Cruise", "Bus"],
     "includes": ["Flight", "Accommodation", "Meals", "Cruise Tour", "Visa Assistance"],
     "description": "Discover Vietnam’s natural beauty, historic cities, and vibrant street markets."
