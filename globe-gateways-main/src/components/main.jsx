@@ -104,16 +104,11 @@ export default function Main() {
     "price": 17500,
     "duration": "10D/9N",
     "image": "../src/assets/images/chardham/char dham.png",
-    "subImages": ["../src/assets/images/chardham/subImages/chardham1.jpg",
-                  "../src/assets/images/chardham/subImages/chardham2.jpg",
-                  "../src/assets/images/chardham/subImages/chardham3.jpg",
-                  "../src/assets/images/chardham/subImages/chardham4.jpg",
-                  "../src/assets/images/chardham/subImages/chardham5.jpg"
-    ],
+    "subImages": [],
     "transportation": ["Bus", "Tempo Traveller"],
     "includes": ["All Temple Visits", "Accommodation", "Meals", "Local Transport"],
     "description": "The ultimate pilgrimage journey across four revered sites in the Indian Himalayas."
-  },
+  }, 
   {
     "id": 7,
     "title": "Tirupati",
@@ -176,12 +171,7 @@ export default function Main() {
     "price": 65500,
     "duration": "6D/5N",
     "image": "../src/assets/images/Dubai/dubai.png",
-    "subImages": ["../src/assets/images/Dubai/subImages/dubai1.jpg",
-                  "../src/assets/images/Dubai/subImages/dubai2.jpg",
-                  "../src/assets/images/Dubai/subImages/dubai3.jpg",
-                  "../src/assets/images/Dubai/subImages/dubai4.jpg",
-                  "../src/assets/images/Dubai/subImages/dubai5.jpg"
-    ],
+    "subImages": [],
     "transportation": ["Flight", "Metro", "Desert Safari Jeep"],
     "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
     "description": "Experience luxury in the heart of the desert with skyscrapers, souks, and safaris."
