@@ -1,99 +1,124 @@
 import gsap from 'gsap'
-import {useGSAP} from '@gsap/react'
-import React, { useState } from "react";
+import { useGSAP } from '@gsap/react'
+import React, { useState, useRef, useEffect } from "react"
 
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(useGSAP)
 
-export default function navbar() {
-useGSAP(()=>{
-gsap.from(".nav-links,.nav-logo,.nav-icons",{
-y:30,
-opacity:0,
-duration:0.5,
-stagger:.1
-})
-})
-const [menuOpen, setMenuOpen] = useState(false);
+export default function Navbar() {
+  useGSAP(() => {
+    gsap.from(".nav-links,.nav-logo,.nav-icons", {
+      y: 30,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.2
+    })
+  })
 
-return (
-  <>
-    <div className="navbar">
-      <div className="nav-left">
-        <div className="nav-logo">Globe Gateways</div>
-        <span className="bi-vertical-bar">|</span>
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [searchBarVisible, setSearchBarVisible] = useState(false)
+  const searchBarRef = useRef(null)
 
-        <div className={`nav-items ${menuOpen ? "show" : "" }`}>
-          <div className="nav-links">
-            <a href="#">Latest Articles</a>
-            <span className="rLine"></span>
-            <span className="lLine"></span>
-          </div>
+  useEffect(() => {
+    if (searchBarVisible) {
+      gsap.fromTo(searchBarRef.current, 
+        { y: 100, opacity: 0 }, 
+        { y: 0, opacity: 1, duration: 0.4, ease: 'power3.out' }
+      )
+    } else {
+      gsap.to(searchBarRef.current, {
+        y: 100,
+        opacity: 0,
+        duration: 0.4,
+        ease: 'power3.in'
+      })
+    }
+  }, [searchBarVisible])
+
+  return (
+    <>
+      <div className="navbar">
+        <div className="nav-left">
+          <div><a className="nav-logo" href="/">Globe Gateways</a></div>
           <span className="bi-vertical-bar">|</span>
 
-          <div className="nav-links">
-            <a href="#">Photo Of The Day</a>
-            <span className="rLine"></span>
-            <span className="lLine"></span>
+          <div className={`nav-items ${menuOpen ? "show" : ""}`}>
+            <div className="nav-links">
+              <a href="/articals" target='_top'><i className='bi bi-image' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i>Latest Articles</a>
+              <span className="rLine"></span>
+              <span className="lLine"></span>
+            </div>
+            <span className="bi-vertical-bar">|</span>
+
+            <div className="nav-links">
+              <a href="/photoofday" target='_top'><i className='bi bi-camera2' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i> Photo Of The Day</a>
+              <span className="rLine"></span>
+              <span className="lLine"></span>
+            </div>
+            <span className="bi-vertical-bar">|</span>
+
+            <div className="nav-links">
+              <a href="/about" target='_top'><i className='bi bi-people' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i> About Us</a>
+              <span className="rLine"></span>
+              <span className="lLine"></span>
+            </div>
+          </div>
+        </div>
+
+        <div className="nav-right">
+          <div className="nav-icons" onClick={() => setSearchBarVisible(!searchBarVisible)}>
+            <i className="bi bi-search"></i>
           </div>
           <span className="bi-vertical-bar">|</span>
-
           <div className="nav-links">
-            <a href="#">About Us</a>
+            <a href="/account"><i className='bi bi-person-fill' style={{ fontSize: ".8rem", marginRight: ".2rem" }}></i>Account</a>
             <span className="rLine"></span>
             <span className="lLine"></span>
+          </div>
+
+          <span className="bi-vertical-bar">|</span>
+
+          <div className="nav-icons nav-links" onClick={() => setMenuOpen(!menuOpen)}>
+            <i className="bi bi-list-nested"></i>
           </div>
         </div>
       </div>
 
-      <div className="nav-right">
-        <div className="nav-icons">
-          <i className="bi bi-search"></i>
-        </div>
-        <span className="bi-vertical-bar">|</span>
-        <div className="nav-links">
-          <a href="#">Subscribe</a>
-          <span className="rLine"></span>
-          <span className="lLine"></span>
-        </div>
-
-        <span className="bi-vertical-bar">|</span>
-
-        {/* Toggle button */}
-        <div className="nav-icons nav-links" onClick={()=> setMenuOpen(!menuOpen)}>
-          <i className="bi bi-list-nested"></i>
-        </div>
+      {/* Search Bar */}
+      <div
+        ref={searchBarRef}
+        style={{
+          position: "fixed",
+          bottom: "10px",
+          left: 0,
+          width:"50vw",
+          right: 0,
+          padding: "1rem",
+          background: "#ffffff10",
+          backdropFilter:"blur(5px)",
+          boxShadow: "0 -2px 10px rgba(0,0,0,0.2)",
+          display: searchBarVisible ? "flex" : "none",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "0.5rem",
+          margin:"auto",
+          zIndex: 999,
+          borderRadius:"50px"
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Search here..."
+          style={{
+            padding: "0.5rem 1rem",
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            flex: "1",
+            maxWidth: "400px",
+            width:"90%",
+          }}
+        />
+        <button className="btn btn-primary" type='search' id="search">Search</button>
       </div>
-
-      {/*
-      <div>
-        <i className="bi bi-person-fill"></i>
-      </div>
-      <div>
-        <i className="bi bi-facebook"></i>
-      </div>
-      <div>
-        <i className="bi bi-whatsapp"></i>
-      </div>
-      <div>
-        <i className="bi bi-chevron-left"></i>
-      </div>
-      <div>
-        <i className="bi bi-bookmark"></i>
-      </div>
-      <div>
-        <i className="bi bi-bookmark-fill"></i>
-      </div>
-      <div>
-        <i className="bi bi-chat-left-text-fill"></i>
-      </div>
-      <div>
-        <i className="bi bi-arrow-up-right"></i>
-      </div>
-      <div>
-        <i className="bi bi-emoji-heart-eyes"></i>
-      </div>
-      */}
-    </div>
-</>
-);
+    </>
+  )
 }
