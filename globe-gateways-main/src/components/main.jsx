@@ -100,12 +100,12 @@ export default function Main() {
     "location": "Andhra Pradesh",
     "price": 19500,
     "duration": "6D/5N",
-    "image": "../src/assets/images/tirupati/tirupati.png",
+    "image": "../src/assets/images/Tirupati/tirupati.png",
     "subImages": ["../src/assets/images/tirupati/subImages/tirupati1.jpg",
                   "../src/assets/images/tirupati/subImages/tirupati2.jpg",
                   "../src/assets/images/tirupati/subImages/tirupati3.jpg",
-                  "../src/assets/images/tirupati/subImages/tirupati4.jpeg",
-                  "../src/assets/images/tirupati/subImages/tirupati5.jpeg"
+                  "../src/assets/images/tirupati/subImages/tirupati4.jpg",
+                  "../src/assets/images/tirupati/subImages/tirupati5.jpg"
     ],
     "transportation": ["Train", "Bus"],
     "includes": ["Temple Darshan", "Accommodation", "Meals", "Local Guide"],
