@@ -62,7 +62,7 @@ export default function Main() {
     "price": 97500,
     "duration": "7D/6N",
     "image": "../src/assets/images/vietnam/vietnam.png",
-    "subImages": ["../src/assets/images/vitenam/subImages/vietnam1.jpg",
+    "subImages": ["../src/assets/images/vitenam/subImages/vietnam1.jpg", 
                   "../src/assets/images/vitenam/subImages/vietnam2.jpg",
                   "../src/assets/images/vitenam/subImages/vietnam3.jpg",
                   "../src/assets/images/vitenam/subImages/vietnam4.jpg",
