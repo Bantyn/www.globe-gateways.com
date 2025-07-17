@@ -140,7 +140,7 @@ export default function Main() {
     "subTitle": "Futuristic gardens and urban wonder",
     "location": "Southeast Asia",
     "price": 129900,
-    "duration": "9D/8N",
+    "duration": "9D/8N", 
     "image": "../src/assets/images/Singapore/singapore.png",
     "subImages": ["../src/assets/images/Singapore/subImages/singapore1.jpg",
                   "../src/assets/images/Singapore/subImages/singapore2.jpg",
