@@ -123,8 +123,13 @@ export default function Main() {
     "location": "Goa",
     "price": 8300,
     "duration": "4D/3N",
-    "image": "../src/assets/images/goa/goa.png",
-    "subImages": [],
+    "image": "../src/assets/images/Goa/goa.png",
+    "subImages": ["../src/assets/images/Goa/subImages/goa1.jpg",
+                  "../src/assets/images/Goa/subImages/goa2.jpg",
+                  "../src/assets/images/Goa/subImages/goa3.jpg",
+                  "../src/assets/images/Goa/subImages/goa4.jpg",
+                  "../src/assets/images/Goa/subImages/goa5.jpg"
+    ],
     "transportation": ["Flight", "Train", "Bike Rentals"],
     "includes": ["Beach Stay", "Breakfast", "Sightseeing", "Nightlife Access"],
     "description": "Golden beaches, Portuguese charm, and endless entertainment make Goa irresistible."
@@ -137,7 +142,12 @@ export default function Main() {
     "price": 129900,
     "duration": "9D/8N",
     "image": "../src/assets/images/Singapore/singapore.png",
-    "subImages": [],
+    "subImages": ["../src/assets/images/Singapore/subImages/singapore1.jpg",
+                  "../src/assets/images/Singapore/subImages/singapore2.jpg",
+                  "../src/assets/images/Singapore/subImages/singapore3.jpg",
+                  "../src/assets/images/Singapore/subImages/singapore4.jpg",
+                  "../src/assets/images/Singapore/subImages/singapore5.jpg"
+    ],
     "transportation": ["Flight", "Metro", "Bus"],
     "includes": ["Flight", "Hotel", "Universal Studios", "Gardens by the Bay"],
     "description": "A clean, efficient city full of world-class attractions and nature-tech fusion."
