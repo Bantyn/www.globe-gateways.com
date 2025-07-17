@@ -145,7 +145,8 @@ export default function Main() {
     "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
     "description": "Experience luxury in the heart of the desert with skyscrapers, souks, and safaris."
   }
-];
+  ];
+
   const containerRef = useRef();
   useEffect(() => {
     const scroll = new LocomotiveScroll({

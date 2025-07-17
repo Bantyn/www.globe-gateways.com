@@ -1,0 +1,69 @@
+.photoofday-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+  gap: 6px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.slider-column {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider-track {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animate Up */
+.scroll-up .slider-track {
+  animation: scrollUp 100s linear infinite;
+}
+
+/* Animate Down */
+.scroll-down .slider-track {
+  animation: scrollDown 100s linear infinite;
+}
+
+.slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+}
+
+.slide img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0.98;
+  border-radius: 8px;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
