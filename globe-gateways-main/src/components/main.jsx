@@ -78,7 +78,7 @@ export default function Main() {
     "subTitle": "Skyscrapers meet harbor lights",
     "location": "East Asia",
     "price": 124500,
-    "duration": "7D/6N",
+    "duration": "7D/6N", 
     "image": "../src/assets/images/hongkong/hongkong.png",
     "subImages": ["../src/assets/images/hongkong/subImages/hongkong1.jpg",
                   "../src/assets/images/hongkong/subImages/hongkong2.jpg",
