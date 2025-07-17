@@ -79,8 +79,13 @@ export default function Main() {
     "location": "East Asia",
     "price": 124500,
     "duration": "7D/6N",
-    "image": "../src/assets/images/hong kong/hongkong.png",
-    "subImages": [],
+    "image": "../src/assets/images/hongkong/hongkong.png",
+    "subImages": ["../src/assets/images/hongkong/subImages/hongkong1.jpg",
+                  "../src/assets/images/hongkong/subImages/hongkong2.jpg",
+                  "../src/assets/images/hongkong/subImages/hongkong3.jpg",
+                  "../src/assets/images/hongkong/subImages/hongkong4.jpg",
+                  "../src/assets/images/hongkong/subImages/hongkong5.jpg"
+    ],
     "transportation": ["Flight", "Metro", "Bus"],
     "includes": ["Flight", "Hotel", "Island Hopping", "Theme Park Tickets"],
     "description": "Explore the vibrant city of Hong Kong — a blend of tradition, innovation, and neon."
