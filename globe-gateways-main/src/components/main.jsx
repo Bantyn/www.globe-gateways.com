@@ -49,7 +49,12 @@ export default function Main() {
     "price": 13500,
     "duration": "6D/5N",
     "image": "../src/assets/images/manali/manali.png",
-    "subImages": [],
+    "subImages": ["../src/assets/images/badhrinath/subImages/badrinath1.jpg",
+                  "../src/assets/images/badhrinath/subImages/badrinath2.jpg",
+                  "../src/assets/images/badhrinath/subImages/badrinath3.jpg",
+                  "../src/assets/images/badhrinath/subImages/badrinath4.jpeg",
+                  "../src/assets/images/badhrinath/subImages/badrinath5.jpeg"
+    ],
     "transportation": ["Bus", "Train", "Flight (optional)"],
     "includes": ["Stay", "Breakfast", "City Tour", "Adventure Activities"],
     "description": "Popular hill station with snowy landscapes, apple orchards, and adventure sports."
