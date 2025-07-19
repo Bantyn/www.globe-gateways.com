@@ -49,11 +49,11 @@ export default function Main() {
     "price": 13500,
     "duration": "6D/5N",
     "image": "../src/assets/images/manali/manali.png",
-    "subImages": ["../src/assets/images/badhrinath/subImages/badrinath1.jpg",
-                  "../src/assets/images/badhrinath/subImages/badrinath2.jpg",
-                  "../src/assets/images/badhrinath/subImages/badrinath3.jpg",
-                  "../src/assets/images/badhrinath/subImages/badrinath4.jpeg",
-                  "../src/assets/images/badhrinath/subImages/badrinath5.jpeg"
+    "subImages": ["../src/assets/images/manali/subImages/manali1.jpg",
+                  "../src/assets/images/manali/subImages/manali2.jpg",
+                  "../src/assets/images/manali/subImages/manali3.jpg",
+                  "../src/assets/images/manali/subImages/manali4.jpeg",
+                  "../src/assets/images/manali/subImages/manali5.jpeg"
     ],
     "transportation": ["Bus", "Train", "Flight (optional)"],
     "includes": ["Stay", "Breakfast", "City Tour", "Adventure Activities"],
