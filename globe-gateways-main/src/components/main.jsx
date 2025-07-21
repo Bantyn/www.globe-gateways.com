@@ -19,11 +19,11 @@ export default function Main() {
                   "../src/assets/images/kedarnath/subImages/kedarnath4.jpg",
                   "../src/assets/images/kedarnath/subImages/kedarnath5.jpg"
     ],
+    "video":"../src/assets/video/kedarnath/subImages/kedarnath.mp4",
     "transportation": ["Bus", "Helicopter", "Shared Cab"],
     "includes": ["Accommodation", "Meals", "Local Guide", "Helicopter Ticket (optional)"],
     "description": "A sacred Himalayan pilgrimage site nestled amidst snow‑capped peaks and spiritual calm."
   },
-  
   {
     "id": 2,
     "title": "Badrinath",
