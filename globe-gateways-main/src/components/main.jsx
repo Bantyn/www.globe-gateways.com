@@ -3,6 +3,7 @@ import { React, useEffect, useRef } from "react";
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 
+
 export default function Main() {
   const json = [
   {
@@ -195,7 +196,7 @@ export default function Main() {
     const scroll = new LocomotiveScroll({
       el: containerRef.current,
       smooth: true,
-      lerp: 0.1,
+      lerp: 0.2,
       smartphone:{
         smooth:true
       },

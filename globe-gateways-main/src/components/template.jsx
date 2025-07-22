@@ -67,13 +67,8 @@ export default function Template({ title, subTitle, price, image, subImages,loca
         <div className="locationTitle">
           <h2 className="text-animation-">{location}</h2>
         </div>
+        <div className="vehical"></div>
         <div className="information">
-
-          <div className="vehical"></div>
-
-
-
-
           <div className="lastVideo">
             <div className="book-your">Book Your {packageType}</div>
           
