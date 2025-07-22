@@ -27,24 +27,26 @@ export default function Main() {
     "description": "A sacred Himalayan pilgrimage site nestled amidst snow‑capped peaks and spiritual calm."
   },
 
-  {
-    "id": 2,
-    "title": "Badrinath",
-    "subTitle": "Temple serenity in Himalayan bliss",
-    "location": "Uttarakhand",
-    "price": 9500,
-    "duration": "3D/2N",
-    "image": "../src/assets/images/badhrinath/badhrinath.png",
-    "subImages": ["../src/assets/images/badhrinath/subImages/badrinath1.jpg",
-                  "../src/assets/images/badhrinath/subImages/badrinath2.jpg",
-                  "../src/assets/images/badhrinath/subImages/badrinath3.jpg",
-                  "../src/assets/images/badhrinath/subImages/badrinath4.jpeg",
-                  "../src/assets/images/badhrinath/subImages/badrinath5.jpeg"
-    ],
-    "transportation": ["Bus", "Cab"],
-    "includes": ["Hotel Stay", "Meals", "Temple Visit", "Travel Insurance"],
-    "description": "A revered Hindu pilgrimage site known for its sacred temple and scenic Himalayan beauty."
-  },
+  // {
+  //   "id": 2,
+  //   "title": "Badrinath",
+  //   "subTitle": "Temple serenity in Himalayan bliss",
+  //   "location": "Uttarakhand",
+  //   "price": 9500,
+  //   "duration": "3D/2N",
+  //   "image": "../src/assets/images/badhrinath/badhrinath.png",
+  //   "subImages": ["../src/assets/images/badhrinath/subImages/badrinath1.jpg",
+  //                 "../src/assets/images/badhrinath/subImages/badrinath2.jpg",
+  //                 "../src/assets/images/badhrinath/subImages/badrinath3.jpg",
+  //                 "../src/assets/images/badhrinath/subImages/badrinath4.jpeg",
+  //                 "../src/assets/images/badhrinath/subImages/badrinath5.jpeg"
+  //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
+  //   "transportation": ["Bus", "Cab"],
+  //   "includes": ["Hotel Stay", "Meals", "Temple Visit", "Travel Insurance"],
+  //   "description": "A revered Hindu pilgrimage site known for its sacred temple and scenic Himalayan beauty."
+  // },
   // {
   //   "id": 3,
   //   "title": "Manali",
@@ -59,6 +61,8 @@ export default function Main() {
   //                 "../src/assets/images/manali/subImages/manali4.jpg",
   //                 "../src/assets/images/manali/subImages/manali5.jpg",
   //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
   //   "transportation": ["Bus", "Train", "Flight (optional)"],
   //   "includes": ["Stay", "Breakfast", "City Tour", "Adventure Activities"],
   //   "description": "Popular hill station with snowy landscapes, apple orchards, and adventure sports."
@@ -77,6 +81,8 @@ export default function Main() {
   //                 "../src/assets/images/vietnam/subImages/vietnam4.jpg",
   //                 "../src/assets/images/vietnam/subImages/vietnam5.jpg"
   //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Cruise", "Bus"],
   //   "includes": ["Flight", "Accommodation", "Meals", "Cruise Tour", "Visa Assistance"],
   //   "description": "Discover Vietnam’s natural beauty, historic cities, and vibrant street markets."
@@ -95,6 +101,8 @@ export default function Main() {
   //                 "../src/assets/images/hongkong/subImages/hongkong4.jpg",
   //                 "../src/assets/images/hongkong/subImages/hongkong5.jpg"
   //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Metro", "Bus"],
   //   "includes": ["Flight", "Hotel", "Island Hopping", "Theme Park Tickets"],
   //   "description": "Explore the vibrant city of Hong Kong — a blend of tradition, innovation, and neon."
@@ -113,6 +121,8 @@ export default function Main() {
   //                 "../src/assets/images/chardham/subImages/chardham4.jpg",
   //                 "../src/assets/images/chardham/subImages/chardham5.jpg"
   //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
   //   "transportation": ["Bus", "Tempo Traveller"],
   //   "includes": ["All Temple Visits", "Accommodation", "Meals", "Local Transport"],
   //   "description": "The ultimate pilgrimage journey across four revered sites in the Indian Himalayas."
@@ -131,6 +141,8 @@ export default function Main() {
   //                 "../src/assets/images/Tirupati/subImages/tirupati4.jpg",
   //                 "../src/assets/images/Tirupati/subImages/tirupati5.jpg"
   //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
   //   "transportation": ["Train", "Bus"],
   //   "includes": ["Temple Darshan", "Accommodation", "Meals", "Local Guide"],
   //   "description": "One of the richest temples in the world, drawing devotees to its sacred foothills."
@@ -149,6 +161,8 @@ export default function Main() {
   //                 "../src/assets/images/Goa/subImages/goa4.jpg",
   //                 "../src/assets/images/Goa/subImages/goa5.jpg"
   //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Train", "Bike Rentals"],
   //   "includes": ["Beach Stay", "Breakfast", "Sightseeing", "Nightlife Access"],
   //   "description": "Golden beaches, Portuguese charm, and endless entertainment make Goa irresistible."
@@ -167,6 +181,8 @@ export default function Main() {
   //                 "../src/assets/images/Singpore/subImages/singpore4.jpg",
   //                 "../src/assets/images/Singpore/subImages/singpore5.jpg"
   //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Metro", "Bus"],
   //   "includes": ["Flight", "Hotel", "Universal Studios", "Gardens by the Bay"],
   //   "description": "A clean, efficient city full of world-class attractions and nature-tech fusion."
@@ -185,6 +201,8 @@ export default function Main() {
   //                 "../src/assets/images/dubai/subImages/dubai4.jpg",
   //                 "../src/assets/images/dubai/subImages/dubai5.jpg"
   //   ],
+  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Metro", "Desert Safari Jeep"],
   //   "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
   //   "description": "Experience luxury in the heart of the desert with skyscrapers, souks, and safaris."
@@ -196,7 +214,7 @@ export default function Main() {
     const scroll = new LocomotiveScroll({
       el: containerRef.current,
       smooth: true,
-      lerp: 0.2,
+      // lerp: 0.2,
       smartphone:{
         smooth:true
       },

@@ -157,72 +157,144 @@
 
 }
 
+.information{
+  min-height: 100vh;
+  width: 100%;
+  /* background: #888; */
+  position: relative;
+}
 
-.information .book-your{
+/* Last Video */
+.lastVideo{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  padding: 5vmin 0px;
+  justify-content: space-between;
+}
+
+.information::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  background-image:
+                    linear-gradient(to bottom, var(--black-color),transparent);
+}
+
+.lastVideo video{
+  width: 100%;
+  /* height: 100vh; */
+  opacity: 0.6;
+  height: auto;
+  position: absolute;
+}
+.includes{
+  /* position: absolute; */
+  z-index:3;
+  top: 0;
+  /* left: 0; */
+  padding: 5vmin 0;
+  margin: 1.5vmin;
+  background:"#666";
+  width:80%;
+  background: #ffffff08;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-family: var(--thin-font);
+  letter-spacing: 3px;
+}
+.includes h1{
+  font-family: var(--sub-heading-font);
+  font-size: 4vmin;
+  margin-bottom: 10px;
+  letter-spacing: 10px;
+  width: 100%;
+}
+.vehical{
+  /* position: absolute; */
+  z-index:3;
+  /* top: 15%; */
+  /* left: 0; */
+  min-height:50vh;
+  padding: 5vmin 0;
+  margin: 1.5vmin;
+  background:"#666";
+  width:80%;
+  border-radius: 30px;
+  display: flex;
+
+  /* grid-template-columns: 1fr 1fr; */
+
+}
+.vehical .svg{
+  z-index:3;
+  top: 0;
+  /* left: 0; */
+  padding: 5vmin 0;
+  margin: 1vmin;
+  background:"#666";
+  flex-shrink: 0;
+  width:25%;
+  background: #ffffff08;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-family: var(--thin-font);
+  letter-spacing: 3px;
+}
+.vehical .text-content{
+  z-index:3;
+  top: 0;
+  /* left: 0; */
+  padding: 5vmin 0;
+  flex-shrink: 0;
+
+  margin: 1vmin;
+  background:"#666";
+  width:73%;
+  background: #ffffff08;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  font-family: var(--thin-font);
+  letter-spacing: 3px;
+}
+.book-your{
   font-family: var(--simple-serenity);
   font-size: 30vmin;
   letter-spacing: 2vh;
   width:50vw;
   color:bisque;
-  position: absolute;
+  /* position: absolute; */
   z-index: 2;
 }
-
-
-/* Last Video */
-.lastVideo{
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-
+.book-your span{
+  font-family: var(--simple-serenity);
+  font-size: 30vmin;
+  letter-spacing: 2vh;
+  width:50vw;
+  color:bisque;
+  /* position: absolute; */
+  z-index: 2;
 }
-.lastVideo::after{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 101%;
-  content: "";
-  background-image: linear-gradient(to top, var(--black-color) ,transparent,transparent),
-                    linear-gradient(to bottom, var(--black-color) ,transparent,transparent);
-  /* background: #000; */
-}
-.lastVideo video{
-  width: 100%;
-  opacity: 0.6;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Price BTN */
 .price-tag{
   width: 100%;
-  position: absolute;
-  bottom: 20vw;
+  /* position: absolute; */
   justify-content: center;
   align-items: center;
   display: flex;
-  margin-bottom: 50%;
+  /* margin-bottom: 30%; */
   z-index: 4;
 }
 #priceTag{
-
   font-size:8vmin;
   font-family: var(--other-font);
   z-index: 1;
@@ -246,7 +318,6 @@
   height:100px;
   transition:cubic-bezier(0.215, 0.610, 0.355, 1) .2s;
 }
-
 .price-tag:hover #priceTag{
   filter: invert();
 }
@@ -354,6 +425,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
   
 }
 .information .book-your{
