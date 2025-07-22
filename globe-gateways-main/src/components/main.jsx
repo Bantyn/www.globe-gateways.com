@@ -41,7 +41,7 @@ export default function Main() {
   //                 "../src/assets/images/badhrinath/subImages/badrinath4.jpeg",
   //                 "../src/assets/images/badhrinath/subImages/badrinath5.jpeg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/badrinath/video/badrinath.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Bus", "Cab"],
   //   "includes": ["Hotel Stay", "Meals", "Temple Visit", "Travel Insurance"],
@@ -61,7 +61,7 @@ export default function Main() {
   //                 "../src/assets/images/manali/subImages/manali4.jpg",
   //                 "../src/assets/images/manali/subImages/manali5.jpg",
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/manali/video/manali.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Bus", "Train", "Flight (optional)"],
   //   "includes": ["Stay", "Breakfast", "City Tour", "Adventure Activities"],
@@ -81,7 +81,7 @@ export default function Main() {
   //                 "../src/assets/images/vietnam/subImages/vietnam4.jpg",
   //                 "../src/assets/images/vietnam/subImages/vietnam5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/vietnam/video/vietnam.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Cruise", "Bus"],
   //   "includes": ["Flight", "Accommodation", "Meals", "Cruise Tour", "Visa Assistance"],
@@ -101,7 +101,7 @@ export default function Main() {
   //                 "../src/assets/images/hongkong/subImages/hongkong4.jpg",
   //                 "../src/assets/images/hongkong/subImages/hongkong5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/hongkong/video/hongkong.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Metro", "Bus"],
   //   "includes": ["Flight", "Hotel", "Island Hopping", "Theme Park Tickets"],
@@ -121,7 +121,7 @@ export default function Main() {
   //                 "../src/assets/images/chardham/subImages/chardham4.jpg",
   //                 "../src/assets/images/chardham/subImages/chardham5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/chardham/video/chardham.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Bus", "Tempo Traveller"],
   //   "includes": ["All Temple Visits", "Accommodation", "Meals", "Local Transport"],
@@ -141,7 +141,7 @@ export default function Main() {
   //                 "../src/assets/images/Tirupati/subImages/tirupati4.jpg",
   //                 "../src/assets/images/Tirupati/subImages/tirupati5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/Tirupati/video/tirupati.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Train", "Bus"],
   //   "includes": ["Temple Darshan", "Accommodation", "Meals", "Local Guide"],
@@ -161,7 +161,7 @@ export default function Main() {
   //                 "../src/assets/images/Goa/subImages/goa4.jpg",
   //                 "../src/assets/images/Goa/subImages/goa5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/Goa/video/goa.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Train", "Bike Rentals"],
   //   "includes": ["Beach Stay", "Breakfast", "Sightseeing", "Nightlife Access"],
@@ -181,7 +181,7 @@ export default function Main() {
   //                 "../src/assets/images/Singpore/subImages/singpore4.jpg",
   //                 "../src/assets/images/Singpore/subImages/singpore5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/Singpore/video/singpore.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Metro", "Bus"],
   //   "includes": ["Flight", "Hotel", "Universal Studios", "Gardens by the Bay"],
@@ -201,7 +201,7 @@ export default function Main() {
   //                 "../src/assets/images/dubai/subImages/dubai4.jpg",
   //                 "../src/assets/images/dubai/subImages/dubai5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/dubai/video/dubai.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Metro", "Desert Safari Jeep"],
   //   "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
