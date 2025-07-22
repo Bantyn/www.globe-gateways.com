@@ -5,7 +5,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
-export default function Template({ title, subTitle, price, image, subImages,location}) {
+export default function Template({ title, subTitle, price, image, subImages,location,packageType,video}) {
   const containerRef = useRef();
   useGSAP(() => {
     gsap.from(".text-animation", {
@@ -55,15 +55,40 @@ export default function Template({ title, subTitle, price, image, subImages,loca
       <div className="sub-images-container">
         <div className="imageRow">
           {subImages.map((element, index) => (
-            <img key={index} data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" src={element} />
+            <img
+              key={index}
+              data-scroll
+              data-scroll-speed="6"
+              data-scroll-direction="horizontal"
+              src={element}
+            />
           ))}
-          </div>
-          <div className="locationTitle"><h2 className="text-animation-">{location}</h2></div>
-          <div className="information">
-            
-          </div>
-          <button type="button" className="price-tag">Book Start at {price} /-</button>
+        </div>
+        <div className="locationTitle">
+          <h2 className="text-animation-">{location}</h2>
+        </div>
+        <div className="information">
 
+          <div className="vehical"></div>
+
+
+
+
+          <div className="lastVideo">
+            <div className="book-your">Book Your {packageType}</div>
+          
+            <div type="button" className="price-tag">
+              <a href="#" id="priceTag">
+                Book Start at {price} /-
+              </a>
+              <div className="tagLine"></div>
+            </div>
+          
+            <video src={video} muted loop autoPlay></video>
+          </div>
+
+
+        </div>
       </div>
     </div>
   );
