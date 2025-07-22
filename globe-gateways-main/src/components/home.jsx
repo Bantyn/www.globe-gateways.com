@@ -18,7 +18,6 @@ export default function Main() {
                     <div className="image-container" ></div>
                 </div>
             </section >
-
-    </>
+        </>
   );
 }

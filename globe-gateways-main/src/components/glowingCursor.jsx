@@ -14,6 +14,5 @@ export default function GlowingCursor() {
       window.removeEventListener('mousemove', moveDot);
     };
   }, []);
-
   return <div ref={dotRef} className="glowing-cursor"></div>;
 }

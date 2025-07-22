@@ -206,7 +206,6 @@ export default function Main() {
   //   "includes": ["Accommodation", "Meals", "Local Guide", "Helicopter Ticket (optional)"],
   //   "description": "A sacred Himalayan pilgrimage site nestled amidst snow‑capped peaks and spiritual calm."
   // }
-  
   ];
 
   const containerRef = useRef();
@@ -247,9 +246,7 @@ export default function Main() {
             video={element.video}
           />
         ))}
-      </main>
-
-      
+      </main> 
     </>
   );
 }
