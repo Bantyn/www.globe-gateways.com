@@ -72,6 +72,7 @@ export default function Template({
               src={element}
             />
           ))}
+          
         </div>
         <div className="locationTitle">
           <h2 className="text-animation-"><i className="bi bi-pin"></i>Location : {location}</h2>
@@ -82,9 +83,10 @@ export default function Template({
             <div className="vehical">
                 <div className="svg">
 
+                  {/* SVG here */}
                 </div>
                 <div className="text-content">
-
+                  {/* text-here */}
 
                 </div>
             </div>
