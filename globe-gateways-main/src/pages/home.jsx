@@ -29,7 +29,7 @@ export default function Main() {
     "duration": "4D/3N",
     "image": "../src/assets/images/kedarnath/kedarnath.png",
     "packageType":"Gruop Tour",
-  },
+  }, 
   {
     "id": 1,
     "title": "Kedarnath",
