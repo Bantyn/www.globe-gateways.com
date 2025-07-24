@@ -1,0 +1,67 @@
+# ========================================================
+# IMPORTANT NOTICE TO ALL DEVELOPERS
+# Maintained by: Mr. Patel
+# Purpose: This .gitignore file defines what files/folders
+#          should NOT be tracked by Git to avoid issues
+#          such as committing sensitive data, IDE configs,
+#          or system-generated files.
+# ========================================================
+
+# === Node Modules ===
+# Do not track dependencies; they can be restored via package.json
+node_modules/
+
+# === Environment Variables ===
+# DO NOT COMMIT .env files — they may contain sensitive credentials
+.env
+.env.local
+.env.*.local
+
+# === Logs ===
+# Skip system or debug logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === OS & Editor Files ===
+# Common OS or editor-generated files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+
+# === Build Output ===
+# Ignore all build/compiled files
+dist/
+build/
+out/
+
+# === VSCode ===
+# Ignore personal VSCode settings
+.vscode/
+
+# === Coverage ===
+# Skip test coverage outputs
+coverage/
+
+# === Temporary Files ===
+# Avoid committing temp files
+*.tmp
+*.temp
+
+# === Custom Cache or Uploads ===
+# Add your app-specific ignores here (e.g., for file uploads, cache, etc.)
+uploads/
+cache/
+
+# ========================================================
+# NOTE FROM MR. PATEL:
+# ➤ Please DO NOT remove or modify this file unless you 
+#    understand the consequences.
+# ➤ If you need to ignore new files, add them below the 
+#    appropriate section or create a comment.
+# ➤ Commit only clean and necessary code — not local configs.
+# ========================================================
