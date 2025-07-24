@@ -1,5 +1,16 @@
-# Logs
-logs
+# ========================================================
+# IMPORTANT NOTICE TO ALL DEVELOPERS
+# Maintained by: Mr. Patel
+# Description: Specifies intentionally untracked files 
+#              that Git should ignore to ensure cleaner 
+#              commits and prevent sensitive/config files
+#              from being pushed accidentally.
+# ========================================================
+
+# =========================
+# ✅ LOG FILES
+# =========================
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +18,42 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# =========================
+# ✅ DEPENDENCIES & BUILDS
+# =========================
+node_modules/
+dist/
+dist-ssr/
+
+# =========================
+# ✅ ENVIRONMENT FILES
+# =========================
 *.local
 
-# Editor directories and files
+# =========================
+# ✅ IDEs / EDITORS / OS FILES
+# =========================
+
+# VS Code (only allow extensions.json to guide team plugins)
 .vscode/*
 !.vscode/extensions.json
-.idea
+
+# JetBrains IDEs (e.g., WebStorm, PhpStorm)
+.idea/
+
+# macOS Finder metadata
 .DS_Store
+
+# Visual Studio files
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# ========================================================
+# ⚠️ NOTE FROM MR. PATEL:
+# - Do NOT remove entries unless you're absolutely sure.
+# - This file helps keep the repo clean and secure.
+# - Add new ignore rules in the correct section.
+# ========================================================
