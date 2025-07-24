@@ -74,7 +74,7 @@ export default function Template({
           ))}
         </div>
         <div className="locationTitle">
-          <h2 className="text-animation-">{location}</h2>
+          <h2 className="text-animation-"><i className="bi bi-pin"></i>Location : {location}</h2>
         </div>
 
         <div className="information">
@@ -101,17 +101,8 @@ export default function Template({
             
 
             <div className="book-your">
-              <span data-scroll data-scroll-speed="2">B</span>
-              <span data-scroll data-scroll-speed="6">o</span>
-              <span data-scroll data-scroll-speed="7">o</span>
-              <span data-scroll data-scroll-speed="1">k</span>
-              <span data-scroll data-scroll-speed="9"><br /></span>
-              <span data-scroll data-scroll-speed="4">Y</span>
-              <span data-scroll data-scroll-speed="9">o</span>
-              <span data-scroll data-scroll-speed="3">u</span>
-              <span data-scroll data-scroll-speed="7">r</span><br />
-              {packageType}</div>
-
+              <div data-scroll data-scroll-speed="-1">Book Your {packageType}</div>
+            </div>
             <div type="button" className="price-tag">
               <a data-scroll href="#" id="priceTag">
                 Booking Starting at {price} /-

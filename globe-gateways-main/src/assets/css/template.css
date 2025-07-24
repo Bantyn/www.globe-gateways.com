@@ -275,7 +275,7 @@
   /* position: absolute; */
   z-index: 2;
 }
-.book-your span{
+.book-your div{
   font-family: var(--simple-serenity);
   font-size: 30vmin;
   letter-spacing: 2vh;

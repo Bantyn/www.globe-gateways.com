@@ -1,0 +1,23 @@
+.card-body{
+    background: #ffffff80;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+.card-items{
+    padding: 10px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card-img{
+    width: 25%;
+}
+.card-img img{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 100%;
+}

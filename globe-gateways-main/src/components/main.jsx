@@ -1,4 +1,5 @@
 import Template from "./template";
+import Card from "./card";
 import { React, useEffect, useRef } from "react";
 import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
@@ -230,7 +231,7 @@ export default function Main() {
   return (
     <>
       <main ref={containerRef} data-scroll-container>
-        {json.map((element, index) => (
+        {/* {json.map((element, index) => (
           <Template
             key={index}
             title={element.title}
@@ -243,6 +244,21 @@ export default function Main() {
             transportation={element.transportation}
             includes={element.includes}
             description={element.description}
+            packageType={element.packageType}
+            video={element.video}
+          />
+        ))} */}
+        {json.map((element, index) => (
+          <Card
+            key={index}
+            title={element.title}
+            subTitle={element.subTitle}
+            price={element.price}
+            image={element.image}
+            location={element.location}
+            duration={element.duration}
+            transportation={element.transportation}
+            includes={element.includes}
             packageType={element.packageType}
             video={element.video}
           />
