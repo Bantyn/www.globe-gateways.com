@@ -40,7 +40,6 @@ export default function Navbar() {
         <div className="nav-left">
           <div><a className="nav-logo" href="/">Globe Gateways</a></div>
           <span className="bi-vertical-bar">|</span>
-
           <div className={`nav-items ${menuOpen ? "show" : ""}`}>
             <div className="nav-links">
               <a href="/articals" target='_top'><i className='bi bi-image' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i>Latest Articles</a>
@@ -48,14 +47,12 @@ export default function Navbar() {
               <span className="lLine"></span>
             </div>
             <span className="bi-vertical-bar">|</span>
-
             <div className="nav-links">
               <a href="/photoofday" target='_top'><i className='bi bi-camera2' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i> Photo Of The Day</a>
               <span className="rLine"></span>
               <span className="lLine"></span>
             </div>
             <span className="bi-vertical-bar">|</span>
-
             <div className="nav-links">
               <a href="/about" target='_top'><i className='bi bi-people' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i> About Us</a>
               <span className="rLine"></span>
@@ -63,7 +60,6 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-
         <div className="nav-right">
           <div className="nav-icons" onClick={() => setSearchBarVisible(!searchBarVisible)}>
             <i className="bi bi-search"></i>
@@ -74,15 +70,12 @@ export default function Navbar() {
             <span className="rLine"></span>
             <span className="lLine"></span>
           </div>
-
           <span className="bi-vertical-bar">|</span>
-
           <div className="nav-icons nav-links" onClick={() => setMenuOpen(!menuOpen)}>
             <i className="bi bi-list-nested"></i>
           </div>
         </div>
       </div>
-
       {/* Search Bar */}
       <div
         ref={searchBarRef}

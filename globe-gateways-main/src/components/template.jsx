@@ -98,7 +98,6 @@ export default function Template({
                 <h1 data-scroll data-scroll-speed="1"><i className="bi bi-car-front"> </i> Transportation</h1>
                 {transportation.map((element, index) => (<p data-scroll data-scroll-speed="1" key="index">{element}</p>))}
             </div>
-            
 
             <div className="book-your">
               <div data-scroll data-scroll-speed="-1">Book Your {packageType}</div>
@@ -112,9 +111,6 @@ export default function Template({
           
             <video src={video} muted loop autoPlay></video>
           </div>
-
-
-
         </div>
       </div>
     </div>

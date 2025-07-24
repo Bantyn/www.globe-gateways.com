@@ -7,27 +7,26 @@ import 'locomotive-scroll/dist/locomotive-scroll.css';
 
 export default function Main() {
   const json = [
-  {
+    {
     "id": 1,
-    "title": "Kedarnath",
-    "subTitle": "Sacred peaks and divine tranquility",
-    "location": "Uttarakhand",
-    "price": 11500,
-    "duration": "4D/3N",
-    "image": "../src/assets/images/kedarnath/kedarnath.png",
-    "subImages": ["../src/assets/images/kedarnath/subImages/kedarnath1.jpg",
-                  "../src/assets/images/kedarnath/subImages/kedarnath2.jpg",
-                  "../src/assets/images/kedarnath/subImages/kedarnath3.jpg",
-                  "../src/assets/images/kedarnath/subImages/kedarnath4.jpg",
-                  "../src/assets/images/kedarnath/subImages/kedarnath5.jpg"
+    "title": "Dubai",
+    "subTitle": "Luxury skyline in desert grandeur",
+    "location": "UAE",
+    "price": 65500,
+    "duration": "6D/5N",
+    "image": "../src/assets/images/dubai/dubai.png",
+    "subImages": ["../src/assets/images/dubai/subImages/dubai1.jpg",
+                  "../src/assets/images/dubai/subImages/dubai2.jpg",
+                  "../src/assets/images/dubai/subImages/dubai3.jpg",
+                  "../src/assets/images/dubai/subImages/dubai4.jpg",
+                  "../src/assets/images/dubai/subImages/dubai5.jpg"
     ],
-    "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+    "video":"../src/assets/images/dubai/video/dubai.mp4",
     "packageType":"Gruop Tour",
-    "transportation": ["Bus", "Helicopter", "Shared Cab"],
-    "includes": ["Accommodation", "Meals", "Local Guide", "Helicopter Ticket (optional)"],
-    "description": "A sacred Himalayan pilgrimage site nestled amidst snow‑capped peaks and spiritual calm."
+    "transportation": ["Flight", "Metro", "Desert Safari Jeep"],
+    "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
+    "description": "Experience luxury in the heart of the desert with skyscrapers, souks, and safaris."
   },
-
   // {
   //   "id": 2,
   //   "title": "Badrinath",
@@ -42,7 +41,7 @@ export default function Main() {
   //                 "../src/assets/images/badhrinath/subImages/badrinath4.jpeg",
   //                 "../src/assets/images/badhrinath/subImages/badrinath5.jpeg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/badhrinath/video/badrinath.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Bus", "Cab"],
   //   "includes": ["Hotel Stay", "Meals", "Temple Visit", "Travel Insurance"],
@@ -62,7 +61,7 @@ export default function Main() {
   //                 "../src/assets/images/manali/subImages/manali4.jpg",
   //                 "../src/assets/images/manali/subImages/manali5.jpg",
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/manali/video/manali.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Bus", "Train", "Flight (optional)"],
   //   "includes": ["Stay", "Breakfast", "City Tour", "Adventure Activities"],
@@ -82,7 +81,7 @@ export default function Main() {
   //                 "../src/assets/images/vietnam/subImages/vietnam4.jpg",
   //                 "../src/assets/images/vietnam/subImages/vietnam5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/vietnam/video/vietnam.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Cruise", "Bus"],
   //   "includes": ["Flight", "Accommodation", "Meals", "Cruise Tour", "Visa Assistance"],
@@ -102,7 +101,7 @@ export default function Main() {
   //                 "../src/assets/images/hongkong/subImages/hongkong4.jpg",
   //                 "../src/assets/images/hongkong/subImages/hongkong5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/hongkong/video/hongkong.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Metro", "Bus"],
   //   "includes": ["Flight", "Hotel", "Island Hopping", "Theme Park Tickets"],
@@ -122,7 +121,7 @@ export default function Main() {
   //                 "../src/assets/images/chardham/subImages/chardham4.jpg",
   //                 "../src/assets/images/chardham/subImages/chardham5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/chardham/video/chardham.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Bus", "Tempo Traveller"],
   //   "includes": ["All Temple Visits", "Accommodation", "Meals", "Local Transport"],
@@ -142,7 +141,7 @@ export default function Main() {
   //                 "../src/assets/images/Tirupati/subImages/tirupati4.jpg",
   //                 "../src/assets/images/Tirupati/subImages/tirupati5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/Tirupati/video/tirupati.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Train", "Bus"],
   //   "includes": ["Temple Darshan", "Accommodation", "Meals", "Local Guide"],
@@ -162,7 +161,7 @@ export default function Main() {
   //                 "../src/assets/images/Goa/subImages/goa4.jpg",
   //                 "../src/assets/images/Goa/subImages/goa5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/Goa/video/goa.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Train", "Bike Rentals"],
   //   "includes": ["Beach Stay", "Breakfast", "Sightseeing", "Nightlife Access"],
@@ -182,7 +181,7 @@ export default function Main() {
   //                 "../src/assets/images/Singpore/subImages/singpore4.jpg",
   //                 "../src/assets/images/Singpore/subImages/singpore5.jpg"
   //   ],
-  //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
+  //   "video":"../src/assets/images/Singpore/video/singpore.mp4",
   //   "packageType":"Gruop Tour",
   //   "transportation": ["Flight", "Metro", "Bus"],
   //   "includes": ["Flight", "Hotel", "Universal Studios", "Gardens by the Bay"],
@@ -190,23 +189,23 @@ export default function Main() {
   // },
   // {
   //   "id": 10,
-  //   "title": "Dubai",
-  //   "subTitle": "Luxury skyline in desert grandeur",
-  //   "location": "UAE",
-  //   "price": 65500,
-  //   "duration": "6D/5N",
-  //   "image": "../src/assets/images/dubai/dubai.png",
-  //   "subImages": ["../src/assets/images/dubai/subImages/dubai1.jpg",
-  //                 "../src/assets/images/dubai/subImages/dubai2.jpg",
-  //                 "../src/assets/images/dubai/subImages/dubai3.jpg",
-  //                 "../src/assets/images/dubai/subImages/dubai4.jpg",
-  //                 "../src/assets/images/dubai/subImages/dubai5.jpg"
+  //   "title": "Kedarnath",
+  //   "subTitle": "Sacred peaks and divine tranquility",
+  //   "location": "Uttarakhand",
+  //   "price": 11500,
+  //   "duration": "4D/3N",
+  //   "image": "../src/assets/images/kedarnath/kedarnath.png",
+  //   "subImages": ["../src/assets/images/kedarnath/subImages/kedarnath1.jpg",
+  //                 "../src/assets/images/kedarnath/subImages/kedarnath2.jpg",
+  //                 "../src/assets/images/kedarnath/subImages/kedarnath3.jpg",
+  //                 "../src/assets/images/kedarnath/subImages/kedarnath4.jpg",
+  //                 "../src/assets/images/kedarnath/subImages/kedarnath5.jpg"
   //   ],
   //   "video":"../src/assets/images/kedarnath/video/kedarnath.mp4",
   //   "packageType":"Gruop Tour",
-  //   "transportation": ["Flight", "Metro", "Desert Safari Jeep"],
-  //   "includes": ["Flight", "Hotel", "Desert Safari", "Burj Khalifa Entry", "Meals"],
-  //   "description": "Experience luxury in the heart of the desert with skyscrapers, souks, and safaris."
+  //   "transportation": ["Bus", "Helicopter", "Shared Cab"],
+  //   "includes": ["Accommodation", "Meals", "Local Guide", "Helicopter Ticket (optional)"],
+  //   "description": "A sacred Himalayan pilgrimage site nestled amidst snow‑capped peaks and spiritual calm."
   // }
   ];
 
@@ -263,9 +262,7 @@ export default function Main() {
             video={element.video}
           />
         ))}
-      </main>
-
-      
+      </main> 
     </>
   );
 }
