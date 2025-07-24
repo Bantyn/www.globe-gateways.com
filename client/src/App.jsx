@@ -22,11 +22,11 @@ export default function App() {
         </header>
         <Routes>
           <Route path='/' element={<Home />} />
-          {/* <Route path='/' element={<Main />} /> */}
+          <Route path='/main' element={<Main />} />
           <Route path='/articals' element={<Articals />} />
           <Route path='/login' element={<Login />} />
           <Route path='/sign' element={<Sign />} />
-          <Route path='/template' element={<Template />} />
+          {/* <Route path='/template' element={<Template />} /> */}
           <Route path='/photoofday' element={<PhotoOfDay />} />
           <Route path='/account' element={<Account />} />
           <Route path='/about' element={<About />} />
