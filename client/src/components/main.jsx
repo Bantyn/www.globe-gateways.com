@@ -1,4 +1,4 @@
-import Template from "../components/template";
+import Template from "./template";
 import Card from "./card";
 import { React, useEffect, useRef } from "react";
 import LocomotiveScroll from 'locomotive-scroll';
