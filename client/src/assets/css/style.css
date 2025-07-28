@@ -167,7 +167,7 @@ body::-webkit-scrollbar {
 }
 .cardContainer{
   /* min-height: 50vh; */
-  width: 80%;
+  width: 90%;
   background: #ffffff05;
   /* z-index: 11; */
   border-radius: 20px;
