@@ -1,7 +1,7 @@
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import React, { useState, useRef, useEffect } from "react"
-
+import {Link} from 'react-router-dom'
 gsap.registerPlugin(useGSAP)
 
 export default function Navbar() {
@@ -38,23 +38,23 @@ export default function Navbar() {
     <>
       <div className="navbar">
         <div className="nav-left">
-          <div><a className="nav-logo" href="/">Globe Gateways</a></div>
+          <div><Link to="/" className="nav-logo">Globe Gateways</Link></div>
           <span className="bi-vertical-bar">|</span>
           <div className={`nav-items ${menuOpen ? "show" : ""}`}>
             <div className="nav-links">
-              <a href="/articals" target='_top'><i className='bi bi-image' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i>Latest Articles</a>
+              <Link to="/articals"><i className='bi bi-image' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i>Latest Articles</Link>
               <span className="rLine"></span>
               <span className="lLine"></span>
             </div>
             <span className="bi-vertical-bar">|</span>
             <div className="nav-links">
-              <a href="/photoofday" target='_top'><i className='bi bi-camera2' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i> Photo Of The Day</a>
+              <Link to="/photoofday"><i className='bi bi-camera2' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i> Photo Of The Day</Link>
               <span className="rLine"></span>
               <span className="lLine"></span>
             </div>
             <span className="bi-vertical-bar">|</span>
             <div className="nav-links">
-              <a href="/about" target='_top'><i className='bi bi-people' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i> About Us</a>
+              <Link to="/about"><i className='bi bi-people' style={{ fontSize: ".8rem", marginRight: ".3rem" }}></i> About Us</Link>
               <span className="rLine"></span>
               <span className="lLine"></span>
             </div>
@@ -66,7 +66,7 @@ export default function Navbar() {
           </div>
           <span className="bi-vertical-bar">|</span>
           <div className="nav-links">
-            <a href="/account"><i className='bi bi-person-fill' style={{ fontSize: ".8rem", marginRight: ".2rem" }}></i>Account</a>
+            <Link to="/account"><i className='bi bi-person-fill' style={{ fontSize: ".8rem", marginRight: ".2rem" }}></i>Account</Link>
             <span className="rLine"></span>
             <span className="lLine"></span>
           </div>

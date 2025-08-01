@@ -17,6 +17,7 @@ import GlowingCursor from "./components/glowingCursor.jsx";
 export default function App() {
   return (
     <>
+          {/* <GlowingCursor></GlowingCursor> */}
         <header> 
           <Navbar />
         </header>
