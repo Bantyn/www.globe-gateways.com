@@ -19,8 +19,9 @@
 }
 
 .card-body{
-    background: #ffffff60;
+    /* background: #ffffff60; */
     border-radius: 10px;
+    border: 1.5px solid #c2c0c0a4;
     width: 100%;
     height: auto;
     cursor: pointer;

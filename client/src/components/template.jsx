@@ -127,20 +127,9 @@ import "../assets/css/template.css";
 
 export default function Template() {
   const containerRef = useRef(null);
+  
   const { state } = useLocation();
-  const {
-    title,
-    subTitle,
-    price,
-    image,
-    subImages,
-    location,
-    packageType,
-    video,
-    includes,
-    duration,
-    transportation,
-  } = state || {};
+  const { title,subTitle,price,image,subImages,location,packageType,video,includes,duration,transportation } = state || {};
 
   useEffect(() => {
     const scroll = new LocomotiveScroll({
