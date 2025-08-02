@@ -59,3 +59,136 @@ Stores contact form submissions from users.
 - *email* (VARCHAR(100))
 - *message* (TEXT)
 - *submitted_on* (DATE)
+
+
+
+Here is the reformatted text:
+
+# Designing an Image Storing and Retrieval System in MongoDB and Node.js
+
+To design an image storing and retrieval system in MongoDB and Node.js that fits the JSON format, it's best to store file URLs instead of raw image data. This approach is scalable, efficient, and works well with React.
+
+## Final Goal
+
+The document in MongoDB will look like this:
+{
+  "title": "Goa",
+  "subTitle": "Beaches, parties, and tropical breeze",
+  "location": "Goa",
+  "price": 8300,
+  "duration": "4D/3N",
+  "image": "http:                                  
+  "subImages": [
+    "http://localhost:5000/uploads/goa1.jpg",
+    "http:                                  
+  ],
+  "video": "http://localhost:5000/uploads/goa.mp4",
+  "packageType": "Group Tour",
+  "transportation": ["Flight", "Train", "Bike Rentals"],
+  "includes": ["Beach Stay", "Breakfast", "Sightseeing"],
+  "description": "Golden beaches, Portuguese charm, and endless entertainment make Goa irresistible."
+}
+
+## Backend Setup with Multer
+
+### Install Dependencies
+npm install express mongoose multer cors
+
+### Create Folder for Uploads
+mkdir uploads
+
+### server.js File
+const express = require('express');
+const mongoose = require('mongoose');
+const multer = require('multer');
+const cors = require('cors');
+const path = require('path');
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+// Serve static files
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// Connect to MongoDB
+mongoose.connect('mongodb:                             
+
+                  
+const PackageSchema = new mongoose.Schema({
+  title: String,
+  subTitle: String,
+  location: String,
+  price: Number,
+  duration: String,
+  image: String,
+  subImages: [String],
+  video: String,
+  packageType: String,
+  transportation: [String],
+  includes: [String],
+  description: String
+});
+
+const Package = mongoose.model('//localhost:27017/travelDB');
+
+// Mongoose Schema
+const PackageSchema = new mongoose.Schema({
+  title: String,
+  subTitle: String,
+  location: String,
+  price: Number,
+  duration: String,
+  image: String,
+  subImages: [String],
+  video: String,
+  packageType: String,
+  transportation: [String],
+  includes: [String],
+  description: String
+});
+
+const Package = mongoose.model('Package', PackageSchema);
+
+                        
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => cb(null, '// Multer Storage Config
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => cb(null, 'uploads/'),
+  filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname)
+});
+
+const upload = multer({ storage });
+
+                                                                     
+app.post('// POST route to upload one main image, video, and multiple subImages
+app.post('/upload', upload.fields([
+  { name: 'image', maxCount: 1 },
+  { name: 'video', maxCount: 1 },
+  { name: 'subImages', maxCount: 10 }
+]), async (req, res) => {
+        
+});
+
+app.listen(5000, () => console.log('// ...
+});
+
+app.listen(5000, () => console.log('Server running on port 5000'));
+## React Frontend (FormData Upload)
+import React, { useState } from 'react';
+import axios from 'axios';
+
+const UploadForm = () => {
+  // ...
+};
+
+export default UploadForm;
+## Result
+
+Once uploaded:
+
+- Images/videos are saved in `/uploads/`
+- URLs are stored in MongoDB
+- You can use the URLs in React `<img src={package.image} />` or `<video src={package.video} />`
+
+Would you like me to generate a full working GitHub-ready backend + frontend zip for you?
